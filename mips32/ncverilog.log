@@ -1,5 +1,5 @@
 ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
-TOOL:	ncverilog	06.20-s004: Started on Jul 20, 2017 at 16:42:26 JST
+TOOL:	ncverilog	06.20-s004: Started on Jul 20, 2017 at 17:17:02 JST
 ncverilog
 	+access+r
 	mips32test.v
@@ -95,4 +95,4 @@ Simulation completely successful
 Simulation complete via $finish(1) at time 295 NS + 1
 ./mips32test.v:57                $finish;
 ncsim> exit
-TOOL:	ncverilog	06.20-s004: Exiting on Jul 20, 2017 at 16:42:29 JST  (total: 00:00:03)
+TOOL:	ncverilog	06.20-s004: Exiting on Jul 20, 2017 at 17:17:05 JST  (total: 00:00:03)
