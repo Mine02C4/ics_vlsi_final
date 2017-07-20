@@ -1,0 +1,98 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on Jul 20, 2017 at 16:42:26 JST
+ncverilog
+	+access+r
+	mips32test.v
+	mips32.v
+file: mips32test.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+	module worklib.exmemory:v
+		errors: 0, warnings: 0
+file: mips32.v
+	module worklib.mips:v
+		errors: 0, warnings: 0
+	module worklib.controller:v
+		errors: 0, warnings: 0
+	module worklib.alucontrol:v
+		errors: 0, warnings: 0
+	module worklib.datapath:v
+		errors: 0, warnings: 0
+	module worklib.alu:v
+		errors: 0, warnings: 0
+	module worklib.regfile:v
+		errors: 0, warnings: 0
+	module worklib.zerodetect:v
+		errors: 0, warnings: 0
+	module worklib.flop:v
+		errors: 0, warnings: 0
+	module worklib.flopen:v
+		errors: 0, warnings: 0
+	module worklib.flopenr:v
+		errors: 0, warnings: 0
+	module worklib.mux2:v
+		errors: 0, warnings: 0
+	module worklib.mux4:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: ....................
+         $readmemh("mips32test.dat", RAM);
+                                       |
+ncelab: *W,MEMODR (./mips32test.v,85|39): $readmem default memory order incompatible with IEEE1364.
+ Done
+	Generating native compiled code:
+		worklib.alu:v <0x6e329022>
+			streams:   5, words:  1212
+		worklib.alucontrol:v <0x7609e28a>
+			streams:   2, words:  1136
+		worklib.controller:v <0x3eeea2cb>
+			streams:  19, words:  9637
+		worklib.datapath:v <0x2e373c85>
+			streams:   6, words:   852
+		worklib.exmemory:v <0x6d7e66f7>
+			streams:   6, words:  1300
+		worklib.flop:v <0x60cba671>
+			streams:   2, words:   269
+		worklib.flopen:v <0x6ca7387c>
+			streams:   2, words:   335
+		worklib.flopenr:v <0x73c38b22>
+			streams:   2, words:   462
+		worklib.mips:v <0x1b62fca4>
+			streams:   2, words:   202
+		worklib.mux2:v <0x0d9a44ba>
+			streams:   1, words:   171
+		worklib.mux2:v <0x5ed4f731>
+			streams:   1, words:   180
+		worklib.mux4:v <0x0128460d>
+			streams:   2, words:   656
+		worklib.regfile:v <0x1b768a15>
+			streams:   4, words:  1335
+		worklib.top:v <0x2f7be04d>
+			streams:   6, words:  2354
+		worklib.zerodetect:v <0x3908021f>
+			streams:   1, words:   121
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  21      14
+		Registers:                30      26
+		Scalar wires:             12       -
+		Expanded wires:            4       1
+		Vectored wires:           34       -
+		Always blocks:            18      14
+		Initial blocks:            2       2
+		Cont. assignments:        13      12
+		Pseudo assignments:        8       8
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+Data [         7] is stored in Address [        20]
+Simulation completely successful
+Simulation complete via $finish(1) at time 295 NS + 1
+./mips32test.v:57                $finish;
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on Jul 20, 2017 at 16:42:29 JST  (total: 00:00:03)

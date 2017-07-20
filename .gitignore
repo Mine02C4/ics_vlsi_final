@@ -6,3 +6,6 @@
 .sw[op]
 *.bak
 
+INCA_libs/
+*.vcd
+
