@@ -1,0 +1,267 @@
+[07/31 23:03:14      0s] 
+[07/31 23:03:14      0s] Cadence Innovus(TM) Implementation System.
+[07/31 23:03:14      0s] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/31 23:03:14      0s] 
+[07/31 23:03:14      0s] Version:	v16.21-s078_1, built Fri Jan 20 14:00:53 PST 2017
+[07/31 23:03:14      0s] Options:	-init scripts/par.tcl 
+[07/31 23:03:14      0s] Date:		Mon Jul 31 23:03:14 2017
+[07/31 23:03:14      0s] Host:		cad3 (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz 6144KB)
+[07/31 23:03:14      0s] OS:		CentOS release 6.9 (Final)
+[07/31 23:03:14      0s] 
+[07/31 23:03:14      0s] License:
+[07/31 23:03:14      0s] 		invs	Innovus Implementation System	16.2	checkout succeeded
+[07/31 23:03:14      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[07/31 23:03:24      9s] @(#)CDS: Innovus v16.21-s078_1 (64bit) 01/20/2017 14:00 (Linux 2.6.18-194.el5)
+[07/31 23:03:24      9s] @(#)CDS: NanoRoute 16.21-s078_1 NR170119-1828/16_21-UB (database version 2.30, 368.6.1) {superthreading v1.37}
+[07/31 23:03:24      9s] @(#)CDS: AAE 16.21-e024 (64bit) 01/20/2017 (Linux 2.6.18-194.el5)
+[07/31 23:03:24      9s] @(#)CDS: CTE 16.21-s038_1 () Jan 19 2017 09:01:24 ( )
+[07/31 23:03:24      9s] @(#)CDS: SYNTECH 16.21-s013_1 () Jan 14 2017 08:40:50 ( )
+[07/31 23:03:24      9s] @(#)CDS: CPE v16.21-s075
+[07/31 23:03:24      9s] @(#)CDS: IQRC/TQRC 15.2.7-s638 (64bit) Wed Jan  4 19:58:15 PST 2017 (Linux 2.6.18-194.el5)
+[07/31 23:03:24      9s] @(#)CDS: OA 22.50-p051 Thu Aug  4 00:05:16 2016
+[07/31 23:03:24      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[07/31 23:03:24      9s] @(#)CDS: RCDB 11.8
+[07/31 23:03:24      9s] --- Running on cad3 (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz 6144KB) ---
+[07/31 23:03:24      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_28858_cad3_j141405n_dFwVIS.
+
+[07/31 23:03:24      9s] 
+[07/31 23:03:24      9s] **INFO:  MMMC transition support version v31-84 
+[07/31 23:03:24      9s] 
+[07/31 23:03:24      9s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[07/31 23:03:24      9s] <CMD> suppressMessage ENCEXT-2799
+[07/31 23:03:25      9s] <CMD> getDrawView
+[07/31 23:03:25      9s] <CMD> loadWorkspace -name Physical
+[07/31 23:03:25      9s] Sourcing file "scripts/par.tcl" ...
+[07/31 23:03:25      9s] <CMD> redirect Default.view {
+echo "create_library_set -name default -timing {/home/staff2/matutani/lib/slow.lib}"
+echo "create_constraint_mode -name default -sdc_files {core.sdc}"
+echo "create_delay_corner -name default -library_set {default}"
+echo "create_analysis_view -name default -constraint_mode {default} -delay_corner {default}"
+echo "set_analysis_view -setup {default} -hold {default}"
+}
+[07/31 23:03:25      9s] <CMD> set init_top_cell core
+[07/31 23:03:25      9s] <CMD> set init_verilog core.vnet
+[07/31 23:03:25      9s] <CMD> set init_lef_file /home/staff2/matutani/lib/cells.lef
+[07/31 23:03:25      9s] <CMD> set init_pwr_net VDD
+[07/31 23:03:25      9s] <CMD> set init_gnd_net VSS
+[07/31 23:03:25      9s] <CMD> set init_mmmc_file Default.view
+[07/31 23:03:25      9s] <CMD> init_design
+[07/31 23:03:25      9s] #- Begin Load MMMC data ... (date=07/31 23:03:25, mem=493.4M)
+[07/31 23:03:25      9s] #- End Load MMMC data ... (date=07/31 23:03:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=71.9M, current mem=493.4M)
+[07/31 23:03:25      9s] 
+[07/31 23:03:25      9s] Loading LEF file /home/staff2/matutani/lib/cells.lef ...
+[07/31 23:03:25      9s] Set DBUPerIGU to M2 pitch 380.
+[07/31 23:03:25      9s] 
+[07/31 23:03:25      9s] viaInitial starts at Mon Jul 31 23:03:25 2017
+viaInitial ends at Mon Jul 31 23:03:25 2017
+Loading view definition file from Default.view
+[07/31 23:03:25      9s] Reading default timing library '/home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib' ...
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:26      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /home/staff2/matutani/VLSI12/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/CCS/NangateOpenCellLibrary_slow_ccs.lib)
+[07/31 23:03:27      9s] Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+[07/31 23:03:29     11s] Read 134 cells in library 'NangateOpenCellLibrary' 
+[07/31 23:03:29     11s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.19min, fe_real=0.25min, fe_mem=522.5M) ***
+[07/31 23:03:29     11s] #- Begin Load netlist data ... (date=07/31 23:03:29, mem=522.5M)
+[07/31 23:03:29     11s] *** Begin netlist parsing (mem=522.5M) ***
+[07/31 23:03:29     11s] Created 134 new cells from 1 timing libraries.
+[07/31 23:03:29     11s] Reading netlist ...
+[07/31 23:03:29     11s] Backslashed names will retain backslash and a trailing blank character.
+[07/31 23:03:29     11s] Reading verilog netlist 'core.vnet'
+[07/31 23:03:29     11s] 
+[07/31 23:03:29     11s] *** Memory Usage v#1 (Current mem = 522.504M, initial mem = 174.438M) ***
+[07/31 23:03:29     11s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=522.5M) ***
+[07/31 23:03:29     11s] #- End Load netlist data ... (date=07/31 23:03:29, total cpu=0:00:00.0, real=0:00:00.0, peak res=89.4M, current mem=522.5M)
+[07/31 23:03:29     11s] Set top cell to core.
+[07/31 23:03:29     11s] Hooked 134 DB cells to tlib cells.
+[07/31 23:03:29     11s] Starting recursive module instantiation check.
+[07/31 23:03:29     11s] No recursion found.
+[07/31 23:03:29     11s] Building hierarchical netlist for Cell core ...
+[07/31 23:03:29     11s] *** Netlist is unique.
+[07/31 23:03:29     11s] ** info: there are 147 modules.
+[07/31 23:03:29     11s] ** info: there are 2662 stdCell insts.
+[07/31 23:03:29     11s] 
+[07/31 23:03:29     11s] *** Memory Usage v#1 (Current mem = 558.176M, initial mem = 174.438M) ***
+[07/31 23:03:29     11s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[07/31 23:03:29     11s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[07/31 23:03:29     11s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[07/31 23:03:29     11s] Set Default Net Delay as 1000 ps.
+[07/31 23:03:29     11s] Set Default Net Load as 0.5 pF. 
+[07/31 23:03:29     11s] Set Default Input Pin Transition as 0.1 ps.
+[07/31 23:03:30     11s] Extraction setup Delayed 
+[07/31 23:03:30     11s] *Info: initialize multi-corner CTS.
+[07/31 23:03:30     11s] Reading timing constraints file 'core.sdc' ...
+[07/31 23:03:30     11s] Current (total cpu=0:00:11.6, real=0:00:16.0, peak res=241.8M, current mem=671.0M)
+[07/31 23:03:30     11s] INFO (CTE): Constraints read successfully.
+[07/31 23:03:30     11s] WARNING (CTE-25): Line: 8 of File core.sdc : Skipped unsupported command: set_units
+[07/31 23:03:30     11s] 
+[07/31 23:03:30     11s] 
+[07/31 23:03:30     11s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=258.9M, current mem=688.2M)
+[07/31 23:03:30     11s] Current (total cpu=0:00:11.6, real=0:00:16.0, peak res=258.9M, current mem=688.2M)
+[07/31 23:03:30     11s] Summary for sequential cells identification: 
+[07/31 23:03:30     11s] Identified SBFF number: 16
+[07/31 23:03:30     11s] Identified MBFF number: 0
+[07/31 23:03:30     11s] Identified SB Latch number: 0
+[07/31 23:03:30     11s] Identified MB Latch number: 0
+[07/31 23:03:30     11s] Not identified SBFF number: 0
+[07/31 23:03:30     11s] Not identified MBFF number: 0
+[07/31 23:03:30     11s] Not identified SB Latch number: 0
+[07/31 23:03:30     11s] Not identified MB Latch number: 0
+[07/31 23:03:30     11s] Number of sequential cells which are not FFs: 13
+[07/31 23:03:30     11s] 
+[07/31 23:03:30     11s] Total number of combinational cells: 99
+[07/31 23:03:30     11s] Total number of sequential cells: 29
+[07/31 23:03:30     11s] Total number of tristate cells: 6
+[07/31 23:03:30     11s] Total number of level shifter cells: 0
+[07/31 23:03:30     11s] Total number of power gating cells: 0
+[07/31 23:03:30     11s] Total number of isolation cells: 0
+[07/31 23:03:30     11s] Total number of power switch cells: 0
+[07/31 23:03:30     11s] Total number of pulse generator cells: 0
+[07/31 23:03:30     11s] Total number of always on buffers: 0
+[07/31 23:03:30     11s] Total number of retention cells: 0
+[07/31 23:03:30     11s] List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+[07/31 23:03:30     11s] Total number of usable buffers: 9
+[07/31 23:03:30     11s] List of unusable buffers:
+[07/31 23:03:30     11s] Total number of unusable buffers: 0
+[07/31 23:03:30     11s] List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+[07/31 23:03:30     11s] Total number of usable inverters: 6
+[07/31 23:03:30     11s] List of unusable inverters:
+[07/31 23:03:30     11s] Total number of unusable inverters: 0
+[07/31 23:03:30     11s] List of identified usable delay cells:
+[07/31 23:03:30     11s] Total number of identified usable delay cells: 0
+[07/31 23:03:30     11s] List of identified unusable delay cells:
+[07/31 23:03:30     11s] Total number of identified unusable delay cells: 0
+[07/31 23:03:30     11s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[07/31 23:03:30     11s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[07/31 23:03:30     11s] Extraction setup Started 
+[07/31 23:03:30     11s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M1 and M2 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M2 and M3 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M3 and M4 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M4 and M5 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M5 and M6 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M6 and M7 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M7 and M8 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M8 and M9 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2773):	The via resistance between layers M9 and M10 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+[07/31 23:03:30     11s] Type 'man IMPEXT-2773' for more detail.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.38 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.25 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.25 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.21 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.21 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.21 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.075 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.075 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.03 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] **WARN: (IMPEXT-2766):	The sheet resistance for layer M10 is not defined in the cap table. Therefore, the LEF value 0.03 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+[07/31 23:03:30     11s] Summary of Active RC-Corners : 
+[07/31 23:03:30     11s]  
+[07/31 23:03:30     11s]  Analysis View: default
+[07/31 23:03:30     11s]     RC-Corner Name        : default_rc_corner
+[07/31 23:03:30     11s]     RC-Corner Index       : 0
+[07/31 23:03:30     11s]     RC-Corner Temperature : 25 Celsius
+[07/31 23:03:30     11s]     RC-Corner Cap Table   : ''
+[07/31 23:03:30     11s]     RC-Corner PreRoute Res Factor         : 1
+[07/31 23:03:30     11s]     RC-Corner PreRoute Cap Factor         : 1
+[07/31 23:03:30     11s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[07/31 23:03:30     11s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[07/31 23:03:30     11s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[07/31 23:03:30     11s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from Cap Table]
+[07/31 23:03:30     11s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from Cap Table]
+[07/31 23:03:30     11s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[07/31 23:03:30     11s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[07/31 23:03:30     11s] 
+[07/31 23:03:30     11s] *** Summary of all messages that are not suppressed in this session:
+[07/31 23:03:30     11s] Severity  ID               Count  Summary                                  
+[07/31 23:03:30     11s] WARNING   IMPEXT-2766         10  The sheet resistance for layer %s is not...
+[07/31 23:03:30     11s] WARNING   IMPEXT-2773         10  The via resistance between layers %s and...
+[07/31 23:03:30     11s] *** Message Summary: 20 warning(s), 0 error(s)
+[07/31 23:03:30     11s] 
+[07/31 23:03:30     11s] <CMD> floorPlan -s 150 150 15 15 15 15
+[07/31 23:03:30     11s] **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 15.010000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[07/31 23:03:30     11s] **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 14.980000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[07/31 23:03:30     11s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 15.010000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[07/31 23:03:30     11s] **WARN: (IMPFP-4026):	Adjusting core to 'Top' to 14.980000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[07/31 23:03:30     11s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[07/31 23:03:30     11s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[07/31 23:03:30     11s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[07/31 23:03:30     11s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[07/31 23:03:30     11s] <CMD> editPin -pin clk -layer metal3 -spreadType CENTER -side TOP -use CLOCK
+[07/31 23:03:30     11s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[07/31 23:03:30     11s] Successfully spread [1] pins.
+[07/31 23:03:30     11s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 953.2M).
+[07/31 23:03:30     11s] <CMD> editPin -pin reset -layer metal3 -spreadType CENTER -side TOP -use SIGNAL
+[07/31 23:03:30     11s] To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
+[07/31 23:03:30     11s] Successfully spread [1] pins.
+[07/31 23:03:30     11s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 953.2M).
+[07/31 23:03:30     11s] <CMD> editPin -pin {memdata[0]} -layer metal3 -spreadType CENTER -side TOP -use SIGNAL
+[07/31 23:03:30     11s] **WARN: (IMPPTN-1235):	Cannot find pin memdata[0] on partition core
+[07/31 23:03:30     11s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+[07/31 23:03:30     11s] **ERROR: (IMPSYT-6692):	Invalid return code while executing 'scripts/par.tcl' was returned and script processing was stopped. Review the following error in 'scripts/par.tcl' then restart.
+[07/31 23:03:30     11s] Error info: scripts/par.tcl: 
+[07/31 23:03:30     11s]     while executing
+[07/31 23:03:30     11s] "editPin -pin {memdata[0]} -layer metal3 -spreadType CENTER -side TOP -use SIGNAL"
+[07/31 23:03:30     11s]     ("eval" body line 1)
+[07/31 23:03:30     11s]     invoked from within
+[07/31 23:03:30     11s] "eval editPin $args"
+[07/31 23:03:30     11s]     (procedure "editpin" line 9)
+[07/31 23:03:30     11s]     invoked from within
+[07/31 23:03:30     11s] "editpin -pin memdata[0]	-layer metal3 -spreadType CENTER -side TOP -use SIGNAL"
+[07/31 23:03:30     11s]     (file "scripts/par.tcl" line 26)
+[07/31 23:03:30     11s]     invoked from within
+[07/31 23:03:30     11s] "::se_source_orig scripts/par.tcl"
+[07/31 23:03:30     11s]     ("uplevel" body line 1)
+[07/31 23:03:30     11s]     invoked from within
+[07/31 23:03:30     11s] "uplevel [concat ::se_source_orig $args]"
+[07/31 23:03:30     11s]     (procedure "source" line 156)
+[07/31 23:03:30     11s]     invoked from within
+[07/31 23:03:30     11s] "source scripts/par.tcl"
+[07/31 23:03:30     11s]     (in namespace inscope "::" script line 1)
+[07/31 23:03:30     11s]     invoked from within
+[07/31 23:03:30     11s] "namespace inscope :: source $fileName".
+[07/31 23:03:30     11s] <CMD> win
+[07/31 23:05:04     18s] <CMD> gui_select -rect {169.715 95.546 167.330 79.587}
+[07/31 23:05:24     20s] invalid command name "quit"
+[07/31 23:05:26     20s] 
+[07/31 23:05:26     20s] *** Memory Usage v#1 (Current mem = 954.609M, initial mem = 174.438M) ***
+[07/31 23:05:26     20s] 
+[07/31 23:05:26     20s] *** Summary of all messages that are not suppressed in this session:
+[07/31 23:05:26     20s] Severity  ID               Count  Summary                                  
+[07/31 23:05:26     20s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[07/31 23:05:26     20s] WARNING   IMPFP-4026           4  Adjusting core to '%s' to %f due to trac...
+[07/31 23:05:26     20s] WARNING   IMPPTN-1235          1  Cannot find pin %s on partition %s       
+[07/31 23:05:26     20s] ERROR     IMPPTN-963           1  Either specified pin name for the select...
+[07/31 23:05:26     20s] WARNING   IMPEXT-2766         10  The sheet resistance for layer %s is not...
+[07/31 23:05:26     20s] WARNING   IMPEXT-2773         10  The via resistance between layers %s and...
+[07/31 23:05:26     20s] ERROR     IMPSYT-6692          1  Invalid return code while executing '%s'...
+[07/31 23:05:26     20s] *** Message Summary: 26 warning(s), 2 error(s)
+[07/31 23:05:26     20s] 
+[07/31 23:05:26     20s] --- Ending "Innovus" (totcpu=0:00:20.2, real=0:02:12, mem=954.6M) ---

@@ -54,6 +54,7 @@ module core
   wire mem_write_E, mem_write_W;
   wire reg_src_E, reg_src_W;
   wire pc_src_E, pc_src_W;
+  wire [31:0] write_mem_data_E, write_mem_data_W;
   executor exec1(alucont_E, pc_E, rdata1_E, rdata2_E, imm_E, alusrca_E, alusrcb_E, aluresult_E);
   state_to_control stc1(state_E, mem_write_E, reg_write_E, reg_src_E, pc_src_E);
   assign write_mem_data_E = rdata2_E;

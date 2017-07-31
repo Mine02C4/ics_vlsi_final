@@ -1,0 +1,1 @@
+/home/cur10/j/j141405n/ics_vlsi_final/core.sdc

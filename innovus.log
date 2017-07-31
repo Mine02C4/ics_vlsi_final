@@ -1,0 +1,78 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v16.21-s078_1, built Fri Jan 20 14:00:53 PST 2017
+Options:	-init scripts/par.tcl 
+Date:		Mon Jul 31 23:00:26 2017
+Host:		cad3 (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz 6144KB)
+OS:		CentOS release 6.9 (Final)
+
+License:
+		invs	Innovus Implementation System	16.2	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+Sourcing file "scripts/par.tcl" ...
+<CMD> redirect Default.view {
+echo "create_library_set -name default -timing {/home/staff2/matutani/lib/slow.lib}"
+echo "create_constraint_mode -name default -sdc_files {mips.sdc}"
+echo "create_delay_corner -name default -library_set {default}"
+echo "create_analysis_view -name default -constraint_mode {default} -delay_corner {default}"
+echo "set_analysis_view -setup {default} -hold {default}"
+}
+<CMD> set init_top_cell core
+<CMD> set init_verilog mips.vnet
+<CMD> set init_lef_file /home/staff2/matutani/lib/cells.lef
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> set init_mmmc_file Default.view
+<CMD> init_design
+#- Begin Load MMMC data ... (date=07/31 23:00:37, mem=484.7M)
+**ERROR: (TCLCMD-989):	cannot open SDC file 'mips.sdc' for mode 'default'
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'scripts/par.tcl' was returned and script processing was stopped. Review the following error in 'scripts/par.tcl' then restart.
+Error info: scripts/par.tcl: 
+    while executing
+"create_constraint_mode -name default -sdc_files {mips.sdc}"
+    (file "Default.view" line 2)
+    invoked from within
+"::se_source_orig Default.view"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 156)
+    invoked from within
+"source Default.view"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list source $view_def_to_be_processed]"
+    (procedure "::init_design::process_view_def" line 79)
+    invoked from within
+"::init_design::process_view_def $::init_mmmc_file"
+    (procedure "init_design" line 132)
+    invoked from within
+"init_design"
+    (file "scripts/par.tcl" line 17)
+    invoked from within
+"::se_source_orig scripts/par.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 156)
+    invoked from within
+"source scripts/par.tcl"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: source $fileName".
+<CMD> win
+invalid command name "quit"
+
+*** Memory Usage v#1 (Current mem = 490.836M, initial mem = 174.438M) ***
+*** Message Summary: 0 warning(s), 1 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:11.0, real=0:00:30.0, mem=490.8M) ---

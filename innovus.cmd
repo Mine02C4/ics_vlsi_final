@@ -1,0 +1,34 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jul 31 23:00:36 2017                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v16.21-s078_1 (64bit) 01/20/2017 14:00 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 16.21-s078_1 NR170119-1828/16_21-UB (database version 2.30, 368.6.1) {superthreading v1.37}
+#@(#)CDS: AAE 16.21-e024 (64bit) 01/20/2017 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 16.21-s038_1 () Jan 19 2017 09:01:24 ( )
+#@(#)CDS: SYNTECH 16.21-s013_1 () Jan 14 2017 08:40:50 ( )
+#@(#)CDS: CPE v16.21-s075
+#@(#)CDS: IQRC/TQRC 15.2.7-s638 (64bit) Wed Jan  4 19:58:15 PST 2017 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+redirect Default.view {
+echo "create_library_set -name default -timing {/home/staff2/matutani/lib/slow.lib}"
+echo "create_constraint_mode -name default -sdc_files {mips.sdc}"
+echo "create_delay_corner -name default -library_set {default}"
+echo "create_analysis_view -name default -constraint_mode {default} -delay_corner {default}"
+echo "set_analysis_view -setup {default} -hold {default}"
+}
+set init_top_cell core
+set init_verilog mips.vnet
+set init_lef_file /home/staff2/matutani/lib/cells.lef
+set init_pwr_net VDD
+set init_gnd_net VSS
+set init_mmmc_file Default.view
+init_design
+win

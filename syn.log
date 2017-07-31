@@ -1,0 +1,459 @@
+
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                       FloorPlan Manager (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                        Library Compiler (TM)
+                      DesignWare Developer (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                         Power Compiler (TM)
+
+             Version B-2008.09 for linux -- Aug 25, 2008
+              Copyright (c) 1988-2008 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+The above trademark notice does not imply that you are licensed to use 
+all of the listed products. You are licensed to use only those products 
+for which you have lawfully obtained a valid license key.
+
+Initializing...
+#
+# Your design
+#
+set base_name "core"
+core
+set rtl_file  "addrdec.v sram.v top.v timer.v busarb.v slaves.v dmactr.v decoder.v executor.v alu.v core.v register.v"
+addrdec.v sram.v top.v timer.v busarb.v slaves.v dmactr.v decoder.v executor.v alu.v core.v register.v
+set clock_name "clk"
+clk
+set clock_period 10.0
+10.0
+#
+# Libraries
+#
+set target_library "~matutani/lib/fast.db ~matutani/lib/typical.db ~matutani/lib/slow.db"
+~matutani/lib/fast.db ~matutani/lib/typical.db ~matutani/lib/slow.db
+set synthetic_library "dw_foundation.sldb"
+dw_foundation.sldb
+set link_library [concat "*" $target_library $synthetic_library]
+* ~matutani/lib/fast.db ~matutani/lib/typical.db ~matutani/lib/slow.db dw_foundation.sldb
+set symbol_library "generic.sldb"
+generic.sldb
+define_design_lib WORK -path ./WORK
+1
+#
+# Read RTL file(s)
+#
+analyze -format verilog $rtl_file
+Running PRESTO HDLC
+Searching for ./addrdec.v
+Searching for ./sram.v
+Searching for ./top.v
+Searching for ./timer.v
+Searching for ./busarb.v
+Searching for ./slaves.v
+Searching for ./dmactr.v
+Searching for ./decoder.v
+Searching for ./executor.v
+Searching for ./alu.v
+Searching for ./core.v
+Searching for ./register.v
+Compiling source file ./addrdec.v
+Opening include file define.h
+Compiling source file ./sram.v
+Opening include file define.h
+Compiling source file ./top.v
+Opening include file define.h
+Compiling source file ./timer.v
+Opening include file define.h
+Compiling source file ./busarb.v
+Opening include file define.h
+Warning:  ./timer.v:21: Port odata of type input is being assigned.  (VER-1005)
+Compiling source file ./slaves.v
+Opening include file define.h
+Compiling source file ./dmactr.v
+Opening include file define.h
+Warning:  ./slaves.v:16: Port odata of type input is being assigned.  (VER-1005)
+Compiling source file ./decoder.v
+Opening include file define.h
+Opening include file parameter.h
+Opening include file parameter.h
+Compiling source file ./executor.v
+Opening include file define.h
+Opening include file parameter.h
+Compiling source file ./alu.v
+Opening include file define.h
+Compiling source file ./core.v
+Opening include file define.h
+Opening include file parameter.h
+Compiling source file ./register.v
+Opening include file define.h
+Presto compilation completed successfully.
+Loading db file '/home/staff2/matutani/lib/fast.db'
+Loading db file '/home/staff2/matutani/lib/typical.db'
+Loading db file '/home/staff2/matutani/lib/slow.db'
+Loading db file '/usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/dw_foundation.sldb'
+1
+elaborate $base_name
+Loading db file '/usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/gtech.db'
+Loading db file '/usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 74 in file
+	'./core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            78            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine core line 74 in file
+		'./core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       pc_reg        | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'core'.
+Information: Building the design 'fetch_decode_clk'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fetch_decode_clk line 94 in file
+		'./core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     instr_D_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      pc_D_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'decoder'. (HDL-193)
+Warning:  ./decoder.v:19: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'regfile'. (HDL-193)
+
+Inferred memory devices in process
+	in routine regfile line 15 in file
+		'./register.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|       RAM_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|    regfile/19    |   8    |   32    |      3       | N  |
+|    regfile/20    |   8    |   32    |      3       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'decode_execute_clk'. (HDL-193)
+
+Inferred memory devices in process
+	in routine decode_execute_clk line 125 in file
+		'./core.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   reg_addr_E_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|      imm_E_reg      | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    alucont_E_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|    rdata2_E_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      pc_E_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     state_E_reg     | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|    rdata1_E_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    alusrca_E_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'executor'. (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'./executor.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'state_to_control'. (HDL-193)
+Warning:  ./executor.v:40: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./executor.v:41: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./executor.v:46: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./executor.v:47: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Information: Building the design 'execute_write_clk'. (HDL-193)
+
+Inferred memory devices in process
+	in routine execute_write_clk line 166 in file
+		'./core.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|     pc_src_W_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| write_mem_data_W_reg | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   aluresult_W_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|   mem_write_W_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    reg_addr_W_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|   reg_write_W_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    reg_src_W_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'alu_decoder'. (HDL-193)
+
+Statistics for case statements in always block at line 51 in file
+	'./decoder.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            54            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'alucontrol'. (HDL-193)
+
+Statistics for case statements in always block at line 39 in file
+	'./alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            44            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'alu'. (HDL-193)
+
+Statistics for case statements in always block at line 17 in file
+	'./alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            23            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+1
+current_design $base_name
+Current design is 'core'.
+{core}
+link
+
+  Linking design 'core'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (11 designs)              /home/cur10/j/j141405n/ics_vlsi_final/core.db, etc
+  NangateOpenCellLibrary (library) /home/staff2/matutani/lib/fast.db
+  NangateOpenCellLibrary (library) /home/staff2/matutani/lib/typical.db
+  NangateOpenCellLibrary (library) /home/staff2/matutani/lib/slow.db
+  dw_foundation.sldb (library) /usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/dw_foundation.sldb
+
+1
+uniquify
+1
+#
+# Timing
+#
+create_clock -name $clock_name -period $clock_period [find port $clock_name]
+1
+set_clock_uncertainty 0.02 [get_clocks $clock_name]
+1
+set_input_delay 0.1 -clock clk [remove_from_collection [all_inputs] {clk reset}]
+1
+set_output_delay 0.1 -clock clk [all_outputs]
+1
+#
+# Clock gating
+#
+#set_clock_gating_style -sequential latch
+#insert_clock_gating
+#
+# Design synthesis
+#
+compile -map_effort high
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | B-2008.09-DWBB_0809 |    *     |
+| Licensed DW Building Blocks             | B-2008.09-DWBB_0809 |    *     |
+============================================================================
+
+
+Information: There are 65 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition fast set on design core has different process,
+voltage and temperatures parameters than the parameters at which target library 
+NangateOpenCellLibrary is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'execute_write_clk'
+  Processing 'state_to_control'
+  Processing 'alu'
+  Processing 'executor'
+  Processing 'decode_execute_clk'
+  Processing 'regfile'
+  Processing 'alucontrol'
+  Processing 'alu_decoder'
+  Processing 'decoder'
+  Processing 'fetch_decode_clk'
+  Processing 'core'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'core_DW01_add_0'
+  Processing 'alu_DW01_add_0'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04    5773.8      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:04    5207.0      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:04    5207.0      0.00       0.0       0.0                          
+    0:00:05    5069.7      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05    5069.7      0.00       0.0       0.0                          
+    0:00:05    5069.7      0.00       0.0       0.0                          
+    0:00:05    5066.5      0.00       0.0       0.0                          
+    0:00:05    5066.5      0.00       0.0       0.0                          
+    0:00:05    5066.5      0.00       0.0       0.0                          
+    0:00:05    5066.5      0.00       0.0       0.0                          
+    0:00:05    5066.5      0.00       0.0       0.0                          
+    0:00:05    5065.4      0.00       0.0       0.0                          
+    0:00:05    5065.4      0.00       0.0       0.0                          
+    0:00:05    5065.4      0.00       0.0       0.0                          
+    0:00:05    5065.4      0.00       0.0       0.0                          
+    0:00:05    5065.4      0.00       0.0       0.0                          
+    0:00:05    5065.4      0.00       0.0       0.0                          
+    0:00:05    5065.4      0.00       0.0       0.0                          
+Loading db file '/home/staff2/matutani/lib/fast.db'
+Loading db file '/home/staff2/matutani/lib/typical.db'
+Loading db file '/home/staff2/matutani/lib/slow.db'
+
+  Optimization Complete
+  ---------------------
+1
+compile -incremental_mapping -map_effort high
+
+Information: There are 74 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition fast set on design core has different process,
+voltage and temperatures parameters than the parameters at which target library 
+NangateOpenCellLibrary is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+  Processing 'core_DW01_add_0'
+  Processing 'execute_write_clk'
+  Processing 'state_to_control'
+  Processing 'alu_DW01_add_0'
+  Processing 'alu'
+  Processing 'executor'
+  Processing 'decode_execute_clk'
+  Processing 'regfile'
+  Processing 'alucontrol'
+  Processing 'alu_decoder'
+  Processing 'decoder'
+  Processing 'fetch_decode_clk'
+  Processing 'core'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+
+  Beginning Mapping Optimizations  (High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Selecting implementations
+  Selecting implementations
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    5065.4      0.00       0.0       0.0                          
+    0:00:01    5065.4      0.00       0.0       0.0                          
+Loading db file '/home/staff2/matutani/lib/fast.db'
+Loading db file '/home/staff2/matutani/lib/typical.db'
+Loading db file '/home/staff2/matutani/lib/slow.db'
+
+  Optimization Complete
+  ---------------------
+1
+#
+# Output
+#
+write -format verilog -hierarchy -output ${base_name}.vnet
+Writing verilog file '/home/cur10/j/j141405n/ics_vlsi_final/core.vnet'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 3 nets to module core using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdc ${base_name}.sdc
+1
+# report_timing
+# report_reference -hier
+# quit
+Information: Defining new variable 'base_name'. (CMD-041)
+Information: Defining new variable 'clock_name'. (CMD-041)
+Information: Defining new variable 'clock_period'. (CMD-041)
+Information: Defining new variable 'rtl_file'. (CMD-041)
+dc_shell> quit
+
+Thank you...

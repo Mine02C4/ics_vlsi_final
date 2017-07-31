@@ -1,0 +1,95 @@
+[07/31 23:00:26      0s] 
+[07/31 23:00:26      0s] Cadence Innovus(TM) Implementation System.
+[07/31 23:00:26      0s] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/31 23:00:26      0s] 
+[07/31 23:00:26      0s] Version:	v16.21-s078_1, built Fri Jan 20 14:00:53 PST 2017
+[07/31 23:00:26      0s] Options:	-init scripts/par.tcl 
+[07/31 23:00:26      0s] Date:		Mon Jul 31 23:00:26 2017
+[07/31 23:00:26      0s] Host:		cad3 (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz 6144KB)
+[07/31 23:00:26      0s] OS:		CentOS release 6.9 (Final)
+[07/31 23:00:26      0s] 
+[07/31 23:00:26      0s] License:
+[07/31 23:00:26      0s] 		invs	Innovus Implementation System	16.2	checkout succeeded
+[07/31 23:00:26      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[07/31 23:00:36      8s] @(#)CDS: Innovus v16.21-s078_1 (64bit) 01/20/2017 14:00 (Linux 2.6.18-194.el5)
+[07/31 23:00:36      8s] @(#)CDS: NanoRoute 16.21-s078_1 NR170119-1828/16_21-UB (database version 2.30, 368.6.1) {superthreading v1.37}
+[07/31 23:00:36      8s] @(#)CDS: AAE 16.21-e024 (64bit) 01/20/2017 (Linux 2.6.18-194.el5)
+[07/31 23:00:36      8s] @(#)CDS: CTE 16.21-s038_1 () Jan 19 2017 09:01:24 ( )
+[07/31 23:00:36      8s] @(#)CDS: SYNTECH 16.21-s013_1 () Jan 14 2017 08:40:50 ( )
+[07/31 23:00:36      8s] @(#)CDS: CPE v16.21-s075
+[07/31 23:00:36      8s] @(#)CDS: IQRC/TQRC 15.2.7-s638 (64bit) Wed Jan  4 19:58:15 PST 2017 (Linux 2.6.18-194.el5)
+[07/31 23:00:36      8s] @(#)CDS: OA 22.50-p051 Thu Aug  4 00:05:16 2016
+[07/31 23:00:36      8s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[07/31 23:00:36      8s] @(#)CDS: RCDB 11.8
+[07/31 23:00:36      8s] --- Running on cad3 (x86_64 w/Linux 2.6.32-696.1.1.el6.x86_64) (4cores*4cpus*Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz 6144KB) ---
+[07/31 23:00:36      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_28672_cad3_j141405n_ubs1Bj.
+
+[07/31 23:00:37      9s] 
+[07/31 23:00:37      9s] **INFO:  MMMC transition support version v31-84 
+[07/31 23:00:37      9s] 
+[07/31 23:00:37      9s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[07/31 23:00:37      9s] <CMD> suppressMessage ENCEXT-2799
+[07/31 23:00:37      9s] <CMD> getDrawView
+[07/31 23:00:37      9s] <CMD> loadWorkspace -name Physical
+[07/31 23:00:37      9s] Sourcing file "scripts/par.tcl" ...
+[07/31 23:00:37      9s] <CMD> redirect Default.view {
+echo "create_library_set -name default -timing {/home/staff2/matutani/lib/slow.lib}"
+echo "create_constraint_mode -name default -sdc_files {mips.sdc}"
+echo "create_delay_corner -name default -library_set {default}"
+echo "create_analysis_view -name default -constraint_mode {default} -delay_corner {default}"
+echo "set_analysis_view -setup {default} -hold {default}"
+}
+[07/31 23:00:37      9s] <CMD> set init_top_cell core
+[07/31 23:00:37      9s] <CMD> set init_verilog mips.vnet
+[07/31 23:00:37      9s] <CMD> set init_lef_file /home/staff2/matutani/lib/cells.lef
+[07/31 23:00:37      9s] <CMD> set init_pwr_net VDD
+[07/31 23:00:37      9s] <CMD> set init_gnd_net VSS
+[07/31 23:00:37      9s] <CMD> set init_mmmc_file Default.view
+[07/31 23:00:37      9s] <CMD> init_design
+[07/31 23:00:37      9s] #- Begin Load MMMC data ... (date=07/31 23:00:37, mem=484.7M)
+[07/31 23:00:37      9s] **ERROR: (TCLCMD-989):	cannot open SDC file 'mips.sdc' for mode 'default'
+[07/31 23:00:37      9s] **ERROR: (IMPSYT-6692):	Invalid return code while executing 'scripts/par.tcl' was returned and script processing was stopped. Review the following error in 'scripts/par.tcl' then restart.
+[07/31 23:00:37      9s] Error info: scripts/par.tcl: 
+[07/31 23:00:37      9s]     while executing
+[07/31 23:00:37      9s] "create_constraint_mode -name default -sdc_files {mips.sdc}"
+[07/31 23:00:37      9s]     (file "Default.view" line 2)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "::se_source_orig Default.view"
+[07/31 23:00:37      9s]     ("uplevel" body line 1)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "uplevel [concat ::se_source_orig $args]"
+[07/31 23:00:37      9s]     (procedure "source" line 156)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "source Default.view"
+[07/31 23:00:37      9s]     ("uplevel" body line 1)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "uplevel #0 [list source $view_def_to_be_processed]"
+[07/31 23:00:37      9s]     (procedure "::init_design::process_view_def" line 79)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "::init_design::process_view_def $::init_mmmc_file"
+[07/31 23:00:37      9s]     (procedure "init_design" line 132)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "init_design"
+[07/31 23:00:37      9s]     (file "scripts/par.tcl" line 17)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "::se_source_orig scripts/par.tcl"
+[07/31 23:00:37      9s]     ("uplevel" body line 1)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "uplevel [concat ::se_source_orig $args]"
+[07/31 23:00:37      9s]     (procedure "source" line 156)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "source scripts/par.tcl"
+[07/31 23:00:37      9s]     (in namespace inscope "::" script line 1)
+[07/31 23:00:37      9s]     invoked from within
+[07/31 23:00:37      9s] "namespace inscope :: source $fileName".
+[07/31 23:00:37      9s] <CMD> win
+[07/31 23:00:55     10s] invalid command name "quit"
+[07/31 23:00:56     10s] 
+[07/31 23:00:56     10s] *** Memory Usage v#1 (Current mem = 490.836M, initial mem = 174.438M) ***
+[07/31 23:00:56     10s] 
+[07/31 23:00:56     10s] *** Summary of all messages that are not suppressed in this session:
+[07/31 23:00:56     10s] Severity  ID               Count  Summary                                  
+[07/31 23:00:56     10s] ERROR     IMPSYT-6692          1  Invalid return code while executing '%s'...
+[07/31 23:00:56     10s] *** Message Summary: 0 warning(s), 1 error(s)
+[07/31 23:00:56     10s] 
+[07/31 23:00:56     10s] --- Ending "Innovus" (totcpu=0:00:11.0, real=0:00:30.0, mem=490.8M) ---

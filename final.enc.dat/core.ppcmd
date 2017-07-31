@@ -1,0 +1,61 @@
+# PPCMD 1 
+# sroute -nets {VSS VDD} -layerChangeRange {1 10} -connect { blockPin padPin padRing corePin floatingStripe } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 10 -crossoverViaTopLayer 10 -targetViaBottomLayer 1
+# 3 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -nets {VSS VDD} -layer metal8 -width 4 -spacing 2 -block_ring_top_layer_limit metal9 -block_ring_bottom_layer_limit metal7 -padcore_ring_top_layer_limit metal9 -padcore_ring_bottom_layer_limit metal7 -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -set_to_set_distance 50 -xleft_offset 50 -merge_stripes_value 0.095 -max_same_layer_jog_length 1.6
+# 2 
+# 2 
+# 1 
+# 0 
+# 0 
+# 1 
+# BOX_LIST 
+# 30020 29960 329840 329840 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VDD 8000 8 0 142020 329840 100000 0 0 
+# VSS 8000 8 0 130020 329840 100000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addRing -nets {VSS VDD} -type core_rings -spacing_top 2 -spacing_bottom 2 -spacing_right 2 -spacing_left 2 -width_top 4 -width_bottom 4 -width_right 4 -width_left 4 -jog_distance 0.095 -threshold 0.095 -layer_top metal10 -layer_bottom metal10 -layer_right metal9 -layer_left metal9 -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1
+# 1 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VDD 8000 10 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 179930 11960 179930 347560 
+# END_RING_PT_INFO_LIST 
+# VDD 8000 9 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 12020 179760 347840 179760 
+# END_RING_PT_INFO_LIST 
+# VSS 8000 10 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 179930 23960 179930 335560 
+# END_RING_PT_INFO_LIST 
+# VSS 8000 9 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 24020 179760 335840 179760 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+

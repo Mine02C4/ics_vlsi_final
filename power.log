@@ -1,0 +1,1001 @@
+
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                       FloorPlan Manager (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                        Library Compiler (TM)
+                      DesignWare Developer (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                         Power Compiler (TM)
+
+             Version B-2008.09 for linux -- Aug 25, 2008
+              Copyright (c) 1988-2008 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+The above trademark notice does not imply that you are licensed to use 
+all of the listed products. You are licensed to use only those products 
+for which you have lawfully obtained a valid license key.
+
+Initializing...
+#
+# Your design
+#
+set base_name "cpre"
+cpre
+set vnet_file "mips_final.vnet"
+mips_final.vnet
+set sdc_file  "core.sdc"
+core.sdc
+set sdf_file  "mips.sdf"
+mips.sdf
+set spef_file "mips.spef"
+mips.spef
+set saif_file "mips.saif"
+mips.saif
+#
+# Libraries
+#
+#set target_library "~matutani/lib/typical.db"
+#set target_library "~matutani/lib/fast.db"
+set target_library "~matutani/lib/slow.db"
+~matutani/lib/slow.db
+set synthetic_library "dw_foundation.sldb"
+dw_foundation.sldb
+set link_library [concat "*" $target_library $synthetic_library]
+* ~matutani/lib/slow.db dw_foundation.sldb
+set symbol_library "generic.sldb"
+generic.sldb
+define_design_lib WORK -path ./WORK
+1
+#
+# Read post-layout netlist
+#
+read_file -format verilog $vnet_file
+Loading db file '/home/staff2/matutani/lib/slow.db'
+Loading db file '/usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/gtech.db'
+Loading db file '/usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Loading verilog file '/home/cur10/j/j141405n/ics_vlsi_final/mips_final.vnet'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Performing 'read' command.
+Compiling source file /home/cur10/j/j141405n/ics_vlsi_final/mips_final.vnet
+Reading with netlist reader (equivalent to -netlist option).
+Verilog netlist reader completed successfully.
+Current design is now '/home/cur10/j/j141405n/ics_vlsi_final/alu_DW01_add_0.db:alu_DW01_add_0'
+Loaded 13 designs.
+Current design is 'alu_DW01_add_0'.
+alu_DW01_add_0 alu alucontrol alu_decoder core_DW01_add_0 execute_write_clk state_to_control executor decode_execute_clk regfile decoder fetch_decode_clk core
+current_design $base_name
+Error: Can't find design 'cpre'. (UID-109)
+Current design is 'alu_DW01_add_0'.
+{alu_DW01_add_0}
+link
+
+  Linking design 'alu_DW01_add_0'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (13 designs)              /home/cur10/j/j141405n/ics_vlsi_final/alu_DW01_add_0.db, etc
+  NangateOpenCellLibrary (library) /home/staff2/matutani/lib/slow.db
+  dw_foundation.sldb (library) /usr/local/vdec/synopsys/syn_vB-2008.09/libraries/syn/dw_foundation.sldb
+
+1
+#
+# Delay and RC information
+#
+read_sdc $sdc_file
+
+Reading SDC version 1.7...
+Warning: Can't find port 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[31]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[30]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[29]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[28]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[27]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[26]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[25]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[24]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[23]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[22]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[21]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[20]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[19]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[18]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[17]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[16]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[15]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[14]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[13]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[12]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[11]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[10]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[9]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[8]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[7]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[6]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[5]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[4]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[3]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[2]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[1]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_data[0]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[31]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[30]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[29]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[28]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[27]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[26]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[25]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[24]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[23]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[22]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[21]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[20]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[19]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[18]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[17]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[16]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[15]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[14]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[13]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[12]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[11]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[10]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[9]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[8]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[7]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[6]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[5]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[4]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[3]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[2]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[1]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_data[0]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[31]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[30]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[29]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[28]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[27]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[26]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[25]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[24]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[23]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[22]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[21]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[20]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[19]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[18]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[17]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[16]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[15]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[14]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[13]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[12]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[11]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[10]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[9]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[8]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[7]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[6]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[5]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[4]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[3]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[2]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[1]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'imem_addr[0]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[31]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[30]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[29]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[28]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[27]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[26]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[25]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[24]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[23]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[22]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[21]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[20]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[19]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[18]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[17]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[16]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[15]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[14]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[13]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[12]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[11]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[10]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[9]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[8]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[7]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[6]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[5]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[4]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[3]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[2]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[1]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'dmem_addr[0]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[31]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[30]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[29]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[28]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[27]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[26]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[25]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[24]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[23]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[22]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[21]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[20]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[19]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[18]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[17]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[16]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[15]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[14]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[13]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[12]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[11]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[10]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[9]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[8]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[7]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[6]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[5]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[4]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[3]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[2]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[1]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_mem_data[0]' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Warning: Can't find port 'write_enable' in design 'alu_DW01_add_0'. (UID-95)
+Warning: Can't find clock 'clk' in design 'alu_DW01_add_0'. (UID-95)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+1
+read_sdf $sdf_file
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Reading 'maximum' values for 'maximum delay analysis'. (SDFN-16)
+Information: Reading 'minimum' values for 'minimum delay analysis'. (SDFN-16)
+Error: The SDF file contains delays for the design 'core', 
+they cannot be annotated on design 'alu_DW01_add_0'. (SDFN-4)
+0
+read_parasitics $spef_file
+Information: Library unit = 1.000000 ns. (SPEF-10)
+Information: Derived delay scale factor = 0.001000. (SPEF-11)
+Information: Library unit = 0.001000 pF. (SPEF-10)
+Information: Derived capacitance scale factor = 999.999939. (SPEF-12)
+Information: Library unit = 999.999939 kOhm. (SPEF-10)
+Information: Derived resistance scale factor = 0.000001. (SPEF-13)
+
+Reading /home/cur10/j/j141405n/ics_vlsi_final/mips.spef ...
+
+Information: Path delimiter = /. (SPEF-2)
+Information: Pin delimiter = :. (SPEF-3)
+
+2242 RNETs/DNETs have been read.
+
+
+0 net completion steps have been performed.
+0 nets have been skipped due to partial parasitics
+
+1
+#
+# Read switching activity information
+#
+reset_switching_activity
+1
+read_saif -input $saif_file -instance top/dut -unit ns -scale 1
+Error: No switching activity has been annotated. (PWR-362)
+0
+# report_timing
+# report_reference -hier
+# report_power -hier
+# quit
+Information: Defining new variable 'base_name'. (CMD-041)
+Information: Defining new variable 'saif_file'. (CMD-041)
+Information: Defining new variable 'spef_file'. (CMD-041)
+Information: Defining new variable 'vnet_file'. (CMD-041)
+Information: Defining new variable 'sdf_file'. (CMD-041)
+Information: Defining new variable 'sdc_file'. (CMD-041)
+dc_shell> repor
+report_annotated_check                  report_clock_constraint                 report_disable_timing                   report_path_budget                      report_scan_replacement                 
+report_annotated_delay                  report_clock_fanout                     report_dp_smartgen_options              report_path_group                       report_scan_state                       
+report_annotated_transition             report_clock_gating                     report_dw_rp_group_options              report_pin_map                          report_scan_suppress_toggling           
+report_app_var                          report_clock_gating_check               report_fault                            report_pin_name_synonym                 report_supply_net                       
+report_area                             report_clock_timing                     report_fsm                              report_pipeline_scan_data_configuration report_supply_port                      
+report_attribute                        report_clock_tree                       report_hierarchy                        report_port                             report_synlib                           
+report_attributes                       report_clocks                           report_ideal_network                    report_power                            report_synthetic                        
+report_auto_ungroup                     report_compile_options                  report_internal_loads                   report_power_calculation                report_target_library_subset            
+report_autofix_configuration            report_constraint                       report_isolate_ports                    report_power_domain                     report_test_assume                      
+report_autofix_element                  report_constraints                      report_isolation_cell                   report_power_gating                     report_test_model                       
+report_boundary_cell                    report_crpr                             report_level_shifter                    report_power_pin_info                   report_test_point_element               
+report_boundary_cell_io                 report_delay_calculation                report_lib                              report_power_switch                     report_testability_configuration        
+report_bsd_ac_port                      report_design                           report_logicbist_configuration          report_pst                              report_threshold_voltage_group          
+report_bsd_compliance                   report_design_lib                       report_mode                             report_qor                              report_timing                           
+report_bsd_configuration                report_dft_clock_controller             report_multibit                         report_qor_snapshot                     report_timing_derate                    
+report_bsd_instruction                  report_dft_configuration                report_mw_lib                           report_reference                        report_timing_requirements              
+report_bsd_linkage_port                 report_dft_connect                      report_name_rules                       report_resources                        report_transitive_fanin                 
+report_bsd_power_up_reset               report_dft_design                       report_names                            report_retention_cell                   report_transitive_fanout                
+report_buffer_tree                      report_dft_drc_rules                    report_net                              report_saif                             report_ultra_optimization               
+report_buffer_tree_qor                  report_dft_drc_violations               report_net_changes                      report_scan_chain                       report_units                            
+report_bus                              report_dft_equivalent_signals           report_net_characteristics              report_scan_compression_configuration   report_use_test_model                   
+report_cache                            report_dft_insertion_configuration      report_net_fanout                       report_scan_configuration               report_wire_load                        
+report_case_analysis                    report_dft_logic_usage                  report_operand_isolation                report_scan_group                       report_wrapper_configuration            
+report_cell                             report_dft_partition                    report_operating_conditions             report_scan_link                        
+report_check_library_options            report_dft_signal                       report_partitions                       report_scan_path                        
+report_clock                            report_direct_power_rail_tie            report_pass_data                        report_scan_register_type               
+dc_shell> report_timi
+report_timing              report_timing_derate       report_timing_requirements 
+dc_shell> report_timing
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : alu_DW01_add_0
+Version: B-2008.09
+Date   : Mon Jul 31 23:36:44 2017
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port)
+  Endpoint: SUM[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu_DW01_add_0     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  B[0] (in)                                0.00       0.00 f
+  U1_0/CO (FA_X1)                          0.31       0.31 f
+  U1_1/CO (FA_X1)                          0.30       0.61 f
+  U1_2/CO (FA_X1)                          0.30       0.90 f
+  U1_3/CO (FA_X1)                          0.30       1.20 f
+  U1_4/CO (FA_X1)                          0.30       1.50 f
+  U1_5/CO (FA_X1)                          0.30       1.80 f
+  U1_6/CO (FA_X1)                          0.30       2.09 f
+  U1_7/CO (FA_X1)                          0.30       2.39 f
+  U1_8/CO (FA_X1)                          0.30       2.69 f
+  U1_9/CO (FA_X1)                          0.30       2.98 f
+  U1_10/CO (FA_X1)                         0.30       3.28 f
+  U1_11/CO (FA_X1)                         0.30       3.58 f
+  U1_12/CO (FA_X1)                         0.30       3.88 f
+  U1_13/CO (FA_X1)                         0.30       4.17 f
+  U1_14/CO (FA_X1)                         0.30       4.47 f
+  U1_15/CO (FA_X1)                         0.30       4.77 f
+  U1_16/CO (FA_X1)                         0.30       5.06 f
+  U1_17/CO (FA_X1)                         0.30       5.36 f
+  U1_18/CO (FA_X1)                         0.30       5.66 f
+  U1_19/CO (FA_X1)                         0.30       5.96 f
+  U1_20/CO (FA_X1)                         0.30       6.25 f
+  U1_21/CO (FA_X1)                         0.30       6.55 f
+  U1_22/CO (FA_X1)                         0.30       6.85 f
+  U1_23/CO (FA_X1)                         0.30       7.14 f
+  U1_24/CO (FA_X1)                         0.30       7.44 f
+  U1_25/CO (FA_X1)                         0.30       7.74 f
+  U1_26/CO (FA_X1)                         0.32       8.06 f
+  FE_RC_18_0/ZN (NAND2_X1)                 0.10       8.16 r
+  FE_RC_15_0/ZN (NAND3_X1)                 0.11       8.27 f
+[7m--More--[0m[A
+[K  FE_RC_12_0/ZN (NAND2_X1)                 0.09       8.36 r
+[7m--More--[0m[A
+[K  FE_RC_9_0/ZN (NAND3_X1)                  0.08       8.44 f
+[7m--More--[0m[A
+[K  U1_29/CO (FA_X1)                         0.29       8.73 f
+[7m--More--[0m[A
+[K  U1_30/CO (FA_X1)                         0.30       9.03 f
+[7m--More--[0m[A
+[K  U1_31/S (FA_X1)                          0.41       9.44 r
+[7m--More--[0m[A
+[K  SUM[31] (out)                            0.00       9.45 r
+[7m--More--[0m[A
+[K  data arrival time                                   9.45
+[7m--More--[0m[A
+[K  -----------------------------------------------------------
+[7m--More--[0m[A
+[K  (Path is unconstrained)
+[7m--More--[0m[A
+[K
+[7m--More--[0m[A
+[K
+1
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> 
+dc_shell> repo
+report_annotated_check                  report_clock_constraint                 report_disable_timing                   report_path_budget                      report_scan_replacement                 
+report_annotated_delay                  report_clock_fanout                     report_dp_smartgen_options              report_path_group                       report_scan_state                       
+report_annotated_transition             report_clock_gating                     report_dw_rp_group_options              report_pin_map                          report_scan_suppress_toggling           
+report_app_var                          report_clock_gating_check               report_fault                            report_pin_name_synonym                 report_supply_net                       
+report_area                             report_clock_timing                     report_fsm                              report_pipeline_scan_data_configuration report_supply_port                      
+report_attribute                        report_clock_tree                       report_hierarchy                        report_port                             report_synlib                           
+report_attributes                       report_clocks                           report_ideal_network                    report_power                            report_synthetic                        
+report_auto_ungroup                     report_compile_options                  report_internal_loads                   report_power_calculation                report_target_library_subset            
+report_autofix_configuration            report_constraint                       report_isolate_ports                    report_power_domain                     report_test_assume                      
+report_autofix_element                  report_constraints                      report_isolation_cell                   report_power_gating                     report_test_model                       
+report_boundary_cell                    report_crpr                             report_level_shifter                    report_power_pin_info                   report_test_point_element               
+report_boundary_cell_io                 report_delay_calculation                report_lib                              report_power_switch                     report_testability_configuration        
+report_bsd_ac_port                      report_design                           report_logicbist_configuration          report_pst                              report_threshold_voltage_group          
+report_bsd_compliance                   report_design_lib                       report_mode                             report_qor                              report_timing                           
+report_bsd_configuration                report_dft_clock_controller             report_multibit                         report_qor_snapshot                     report_timing_derate                    
+report_bsd_instruction                  report_dft_configuration                report_mw_lib                           report_reference                        report_timing_requirements              
+report_bsd_linkage_port                 report_dft_connect                      report_name_rules                       report_resources                        report_transitive_fanin                 
+report_bsd_power_up_reset               report_dft_design                       report_names                            report_retention_cell                   report_transitive_fanout                
+report_buffer_tree                      report_dft_drc_rules                    report_net                              report_saif                             report_ultra_optimization               
+report_buffer_tree_qor                  report_dft_drc_violations               report_net_changes                      report_scan_chain                       report_units                            
+report_bus                              report_dft_equivalent_signals           report_net_characteristics              report_scan_compression_configuration   report_use_test_model                   
+report_cache                            report_dft_insertion_configuration      report_net_fanout                       report_scan_configuration               report_wire_load                        
+report_case_analysis                    report_dft_logic_usage                  report_operand_isolation                report_scan_group                       report_wrapper_configuration            
+report_cell                             report_dft_partition                    report_operating_conditions             report_scan_link                        
+report_check_library_options            report_dft_signal                       report_partitions                       report_scan_path                        
+report_clock                            report_direct_power_rail_tie            report_pass_data                        report_scan_register_type               
+dc_shell> report_powe
+report_power             report_power_calculation report_power_domain      report_power_gating      report_power_pin_info    report_power_switch      
+dc_shell> report_power
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : alu_DW01_add_0
+Version: B-2008.09
+Date   : Mon Jul 31 23:36:54 2017
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/staff2/matutani/lib/slow.db)
+
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+alu_DW01_add_0         5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  41.0870 uW   (79%)
+  Net Switching Power  =  10.8320 uW   (21%)
+                         ---------
+Total Dynamic Power    =  51.9190 uW  (100%)
+
+Cell Leakage Power     =   1.6003 uW
+
+1
+dc_shell> u
+unalias            ungroup_bus        unset              update             update_timing      uplevel            use_test_model     
+ungroup            uniquify           unsuppress_message update_lib         update_vh_design   upvar              
+dc_shell> u[Kquit
+
+Thank you...

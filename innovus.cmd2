@@ -1,0 +1,63 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Jul 31 23:06:20 2017                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v16.21-s078_1 (64bit) 01/20/2017 14:00 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 16.21-s078_1 NR170119-1828/16_21-UB (database version 2.30, 368.6.1) {superthreading v1.37}
+#@(#)CDS: AAE 16.21-e024 (64bit) 01/20/2017 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 16.21-s038_1 () Jan 19 2017 09:01:24 ( )
+#@(#)CDS: SYNTECH 16.21-s013_1 () Jan 14 2017 08:40:50 ( )
+#@(#)CDS: CPE v16.21-s075
+#@(#)CDS: IQRC/TQRC 15.2.7-s638 (64bit) Wed Jan  4 19:58:15 PST 2017 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+redirect Default.view {
+echo "create_library_set -name default -timing {/home/staff2/matutani/lib/slow.lib}"
+echo "create_constraint_mode -name default -sdc_files {core.sdc}"
+echo "create_delay_corner -name default -library_set {default}"
+echo "create_analysis_view -name default -constraint_mode {default} -delay_corner {default}"
+echo "set_analysis_view -setup {default} -hold {default}"
+}
+set init_top_cell core
+set init_verilog core.vnet
+set init_lef_file /home/staff2/matutani/lib/cells.lef
+set init_pwr_net VDD
+set init_gnd_net VSS
+set init_mmmc_file Default.view
+init_design
+floorPlan -s 150 150 15 15 15 15
+saveDesign floor.enc
+addRing -nets {VSS VDD} -type core_rings -spacing_top 2 -spacing_bottom 2 -spacing_right 2 -spacing_left 2 -width_top 4 -width_bottom 4 -width_right 4 -width_left 4 -jog_distance 0.095 -threshold 0.095 -layer_top metal10 -layer_bottom metal10 -layer_right metal9 -layer_left metal9 -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1
+addStripe -nets {VSS VDD} -layer metal8 -width 4 -spacing 2 -block_ring_top_layer_limit metal9 -block_ring_bottom_layer_limit metal7 -padcore_ring_top_layer_limit metal9 -padcore_ring_bottom_layer_limit metal7 -stacked_via_top_layer metal10 -stacked_via_bottom_layer metal1 -set_to_set_distance 50 -xleft_offset 50 -merge_stripes_value 0.095 -max_same_layer_jog_length 1.6
+sroute -nets {VSS VDD} -layerChangeRange {1 10} -connect { blockPin padPin padRing corePin floatingStripe } -blockPinTarget { nearestRingStripe nearestTarget } -padPinPortConnect { allPort oneGeom } -checkAlignedSecondaryPin 1 -blockPin useLef -allowJogging 1 -crossoverViaBottomLayer 1 -allowLayerChange 1 -targetViaTopLayer 10 -crossoverViaTopLayer 10 -targetViaBottomLayer 1
+saveDesign power.enc
+placeDesign
+setDesignMode -process 45
+setDelayCalMode -engine aae -SIAware true
+setAnalysisMode -analysisType onChipVariation -cppr both
+optDesign -preCTS
+set_ccopt_property buffer_cells {CLKBUF_X1 CLKBUF_X2 CLKBUF_X3}
+ccopt_design
+saveDesign cts.enc
+optDesign -postCTS -hold
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+routeDesign -globalDetail
+optDesign -postRoute
+optDesign -postRoute -hold
+saveDesign route.enc
+addFiller -prefix FILLER -cell FILLCELL_X1 FILLCELL_X2 FILLCELL_X4 FILLCELL_X8 FILLCELL_X16 FILLCELL_X32
+verifyConnectivity -type all -error 1000 -warning 50
+verifyGeometry
+saveNetlist mips_final.vnet
+rcOut -spef mips.spef
+write_sdf -recompute_parallel_arcs mips.sdf
+saveDesign final.enc

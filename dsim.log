@@ -1,12 +1,4 @@
 ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
-TOOL:	ncverilog	06.20-s004: Started on Jul 31, 2017 at 23:32:38 JST
-ncverilog
-	+define+__POST_PR__
-	+access+r
-	-v
-	/home/staff2/matutani/lib/cells.v
-	coretest.v
-	mips_final.vnet
 file: coretest.v
 file: mips_final.vnet
 file: /home/staff2/matutani/lib/cells.v
@@ -2731,4 +2723,3 @@ ncelab: *E,CUVHNF (./coretest.v,42|30): Hierarchical name component lookup faile
                                               |
 ncelab: *E,CUVHNF (./coretest.v,48|46): Hierarchical name component lookup failed at 'core1.ra1'.
 ncverilog: *E,ELBERR: Error during elaboration (status 1), exiting.
-TOOL:	ncverilog	06.20-s004: Exiting on Jul 31, 2017 at 23:32:41 JST  (total: 00:00:03)

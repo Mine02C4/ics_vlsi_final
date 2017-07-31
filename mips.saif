@@ -1,0 +1,7994 @@
+(SAIFILE
+(SAIFVERSION "2.0")
+(DIRECTION "backward")
+(DESIGN )
+(DATE "Mon Jul 31 23:35:22 2017")
+(VENDOR "Synopsys, Inc")
+(PROGRAM_NAME "vcd2saif")
+(VERSION "B-2008.09")
+(DIVIDER / )
+(TIMESCALE 100 ps)
+(DURATION 500)
+(INSTANCE test
+  (INSTANCE core1
+    (NET
+      (ADDI
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (ADDIEX
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (ADDIWR
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (BEQ
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (BEQEX
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (DECODE
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (EXMODE_WIDTH
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (FETCH1
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (FETCH2
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (FETCH3
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (FETCH4
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (INSTR_WIDTH
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (J
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (JEX
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (LB
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (LBRD
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (LBWR
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (LW
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (MEMADR
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (OP_WIDTH
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (RTYPE
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (RTYPEEX
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (RTYPEWR
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (SB
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (SBWR
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (SW
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (alucont_D\[0\]
+        (T0 395) (T1 105) (TX 0)
+        (TC 5) (IG 0)
+      )
+      (alucont_D\[1\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (alucont_D\[2\]
+        (T0 495) (T1 5) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (alucont_E\[0\]
+        (T0 350) (T1 150) (TX 0)
+        (TC 6) (IG 0)
+      )
+      (alucont_E\[1\]
+        (T0 405) (T1 95) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (alucont_E\[2\]
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (aluresult_E\[0\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[10\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[11\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[12\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[13\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[14\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[15\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[16\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[17\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[18\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[19\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[1\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[20\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[21\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[22\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[23\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[24\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[25\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[26\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[27\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[28\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[29\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[2\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[30\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[31\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[3\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[4\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (aluresult_E\[5\]
+        (T0 355) (T1 45) (TX 100)
+        (TC 1) (IG 2)
+      )
+      (aluresult_E\[6\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[7\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[8\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_E\[9\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[0\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[10\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[11\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[12\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[13\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[14\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[15\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[16\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[17\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[18\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[19\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[1\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[20\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[21\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[22\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[23\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[24\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[25\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[26\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[27\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[28\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[29\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[2\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[30\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[31\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[3\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[4\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (aluresult_W\[5\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[6\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[7\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[8\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (aluresult_W\[9\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (alusrca_D
+        (T0 100) (T1 400) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (alusrca_E
+        (T0 100) (T1 400) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (alusrcb_D\[0\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (alusrcb_D\[1\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (alusrcb_E\[0\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (alusrcb_E\[1\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (clk
+        (T0 250) (T1 250) (TX 0)
+        (TC 20) (IG 0)
+      )
+      (dmem_addr\[0\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[10\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[11\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[12\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[13\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[14\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[15\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[16\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[17\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[18\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[19\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[1\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[20\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[21\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[22\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[23\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[24\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[25\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[26\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[27\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[28\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[29\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[2\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[30\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[31\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[3\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[4\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_addr\[5\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[6\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[7\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[8\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_addr\[9\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[0\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[10\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[11\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[12\]
+        (T0 50) (T1 350) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_data\[13\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[14\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[15\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[16\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[17\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_data\[18\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[19\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[1\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[20\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[21\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[22\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[23\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[24\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[25\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[26\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_data\[27\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_data\[28\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[29\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[2\]
+        (T0 0) (T1 400) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[30\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[31\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_data\[3\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[4\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[5\]
+        (T0 50) (T1 350) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_data\[6\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (dmem_data\[7\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[8\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (dmem_data\[9\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (imem_addr\[0\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[12\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[16\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[17\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[18\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[22\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[26\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[27\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[2\]
+        (T0 250) (T1 250) (TX 0)
+        (TC 10) (IG 0)
+      )
+      (imem_addr\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[31\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[3\]
+        (T0 255) (T1 245) (TX 0)
+        (TC 5) (IG 0)
+      )
+      (imem_addr\[4\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (imem_addr\[5\]
+        (T0 355) (T1 145) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (imem_addr\[6\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_addr\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[0\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[12\]
+        (T0 295) (T1 205) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (imem_data\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[16\]
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (imem_data\[17\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[18\]
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (imem_data\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[22\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[26\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[27\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[2\]
+        (T0 50) (T1 450) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (imem_data\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[31\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[3\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[4\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[5\]
+        (T0 100) (T1 400) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[6\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imem_data\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imem_data\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[0\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imm_D\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[12\]
+        (T0 250) (T1 250) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imm_D\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[2\]
+        (T0 55) (T1 445) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (imm_D\[3\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[4\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[5\]
+        (T0 105) (T1 395) (TX 0)
+        (TC 5) (IG 0)
+      )
+      (imm_D\[6\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imm_D\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_D\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[0\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imm_E\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[12\]
+        (T0 250) (T1 250) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imm_E\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[2\]
+        (T0 100) (T1 400) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (imm_E\[3\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[4\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[5\]
+        (T0 150) (T1 350) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (imm_E\[6\]
+        (T0 405) (T1 95) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (imm_E\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (imm_E\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[0\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[12\]
+        (T0 250) (T1 250) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[16\]
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (instr_D\[17\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[18\]
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (instr_D\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[22\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[26\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[27\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[2\]
+        (T0 55) (T1 445) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (instr_D\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[31\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[3\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[4\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[5\]
+        (T0 105) (T1 395) (TX 0)
+        (TC 5) (IG 0)
+      )
+      (instr_D\[6\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_D\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_D\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[0\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[12\]
+        (T0 295) (T1 205) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (instr_F\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[16\]
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (instr_F\[17\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[18\]
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (instr_F\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[22\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[26\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[27\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[2\]
+        (T0 50) (T1 450) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (instr_F\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[31\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[3\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[4\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[5\]
+        (T0 100) (T1 400) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[6\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (instr_F\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (instr_F\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (mem_write_E
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (mem_write_W
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[0\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[12\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[16\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[17\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[18\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[22\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[26\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[27\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[2\]
+        (T0 250) (T1 250) (TX 0)
+        (TC 10) (IG 0)
+      )
+      (pc\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[31\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[3\]
+        (T0 255) (T1 245) (TX 0)
+        (TC 5) (IG 0)
+      )
+      (pc\[4\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (pc\[5\]
+        (T0 355) (T1 145) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (pc\[6\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[0\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[12\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[16\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[17\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[18\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[22\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[26\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[27\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[2\]
+        (T0 255) (T1 245) (TX 0)
+        (TC 9) (IG 0)
+      )
+      (pc_D\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[31\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[3\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (pc_D\[4\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (pc_D\[5\]
+        (T0 405) (T1 95) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (pc_D\[6\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_D\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[0\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[12\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[16\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[17\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[18\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[22\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[26\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[27\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[2\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 8) (IG 0)
+      )
+      (pc_E\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[31\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[3\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (pc_E\[4\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (pc_E\[5\]
+        (T0 455) (T1 45) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (pc_E\[6\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_E\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[0\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[10\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[11\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[12\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[13\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[14\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[15\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[16\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[17\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[18\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[19\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[1\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[20\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[21\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[22\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[23\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[24\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[25\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[26\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[27\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[28\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[29\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[2\]
+        (T0 250) (T1 250) (TX 0)
+        (TC 10) (IG 0)
+      )
+      (pc_F\[30\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[31\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[3\]
+        (T0 255) (T1 245) (TX 0)
+        (TC 5) (IG 0)
+      )
+      (pc_F\[4\]
+        (T0 300) (T1 200) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (pc_F\[5\]
+        (T0 355) (T1 145) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (pc_F\[6\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[7\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[8\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_F\[9\]
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_from_alu\[0\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[10\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[11\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[12\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[13\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[14\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[15\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[16\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[17\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[18\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[19\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[1\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[20\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[21\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[22\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[23\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[24\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[25\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[26\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[27\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[28\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[29\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[2\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[30\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[31\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[3\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[4\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (pc_from_alu\[5\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[6\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[7\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[8\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_from_alu\[9\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (pc_src_E
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (pc_src_W
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (ra1\[0\]
+        (T0 450) (T1 0) (TX 50)
+        (TC 0) (IG 1)
+      )
+      (ra1\[1\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (ra1\[2\]
+        (T0 450) (T1 0) (TX 50)
+        (TC 0) (IG 1)
+      )
+      (ra2\[0\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (ra2\[1\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (ra2\[2\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (rdata1_D\[0\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[10\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[11\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[12\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[13\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[14\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[15\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[16\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[17\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[18\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[19\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[1\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[20\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[21\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[22\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[23\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[24\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[25\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[26\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[27\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[28\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[29\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[2\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[30\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[31\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[3\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[4\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[5\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[6\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[7\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[8\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_D\[9\]
+        (T0 300) (T1 0) (TX 200)
+        (TC 0) (IG 2)
+      )
+      (rdata1_E\[0\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[10\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[11\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[12\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[13\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[14\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[15\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[16\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[17\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[18\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[19\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[1\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[20\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[21\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[22\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[23\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[24\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[25\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[26\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[27\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[28\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[29\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[2\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[30\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[31\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[3\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[4\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[5\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[6\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[7\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[8\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata1_E\[9\]
+        (T0 305) (T1 0) (TX 195)
+        (TC 0) (IG 1)
+      )
+      (rdata2_D\[0\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[10\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[11\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[12\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[13\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[14\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[15\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[16\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[17\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[18\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[19\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[1\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[20\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[21\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[22\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[23\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[24\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[25\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[26\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[27\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[28\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[29\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[2\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[30\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[31\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[3\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[4\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[5\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[6\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[7\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[8\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_D\[9\]
+        (T0 0) (T1 0) (TX 500)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[0\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[10\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[11\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[12\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[13\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[14\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[15\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[16\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[17\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[18\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[19\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[1\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[20\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[21\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[22\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[23\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[24\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[25\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[26\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[27\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[28\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[29\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[2\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[30\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[31\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[3\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[4\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[5\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[6\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[7\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[8\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (rdata2_E\[9\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_D\[0\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_D\[1\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_D\[2\]
+        (T0 0) (T1 0) (TX 0) (TZ 500)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_E\[0\]
+        (T0 5) (T1 0) (TX 0) (TZ 495)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_E\[1\]
+        (T0 5) (T1 0) (TX 0) (TZ 495)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_E\[2\]
+        (T0 5) (T1 0) (TX 0) (TZ 495)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_W\[0\]
+        (T0 55) (T1 0) (TX 0) (TZ 445)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_W\[1\]
+        (T0 55) (T1 0) (TX 0) (TZ 445)
+        (TC 0) (IG 0)
+      )
+      (reg_addr_W\[2\]
+        (T0 55) (T1 0) (TX 0) (TZ 445)
+        (TC 0) (IG 0)
+      )
+      (reg_src_E
+        (T0 405) (T1 95) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (reg_src_W
+        (T0 450) (T1 50) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (reg_write_E
+        (T0 5) (T1 495) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (reg_write_W
+        (T0 55) (T1 445) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (reg_write_data\[0\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[10\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[11\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[12\]
+        (T0 50) (T1 350) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (reg_write_data\[13\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[14\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[15\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[16\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[17\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[18\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[19\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[1\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[20\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[21\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[22\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[23\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[24\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[25\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[26\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[27\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[28\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[29\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[2\]
+        (T0 50) (T1 350) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (reg_write_data\[30\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[31\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[3\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[4\]
+        (T0 350) (T1 50) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (reg_write_data\[5\]
+        (T0 50) (T1 350) (TX 100)
+        (TC 2) (IG 0)
+      )
+      (reg_write_data\[6\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[7\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[8\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reg_write_data\[9\]
+        (T0 400) (T1 0) (TX 100)
+        (TC 0) (IG 2)
+      )
+      (reset
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (state_D\[0\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (state_D\[1\]
+        (T0 0) (T1 500) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (state_D\[2\]
+        (T0 400) (T1 100) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (state_D\[3\]
+        (T0 100) (T1 400) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (state_E\[0\]
+        (T0 405) (T1 95) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (state_E\[1\]
+        (T0 5) (T1 495) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (state_E\[2\]
+        (T0 405) (T1 95) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (state_E\[3\]
+        (T0 100) (T1 400) (TX 0)
+        (TC 4) (IG 0)
+      )
+      (write_enable
+        (T0 500) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[0\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[10\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[11\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[12\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[13\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[14\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[15\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[16\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[17\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[18\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[19\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[1\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[20\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[21\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[22\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[23\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[24\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[25\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[26\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[27\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[28\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[29\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[2\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[30\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[31\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[3\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[4\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[5\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[6\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[7\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[8\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data\[9\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[0\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[10\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[11\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[12\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[13\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[14\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[15\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[16\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[17\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[18\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[19\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[1\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[20\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[21\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[22\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[23\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[24\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[25\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[26\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[27\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[28\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[29\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[2\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[30\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[31\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[3\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[4\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[5\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[6\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[7\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[8\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_E\[9\]
+        (T0 5) (T1 0) (TX 495)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[0\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[10\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[11\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[12\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[13\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[14\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[15\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[16\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[17\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[18\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[19\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[1\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[20\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[21\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[22\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[23\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[24\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[25\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[26\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[27\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[28\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[29\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[2\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[30\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[31\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[3\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[4\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[5\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[6\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[7\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[8\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+      (write_mem_data_W\[9\]
+        (T0 55) (T1 0) (TX 445)
+        (TC 0) (IG 0)
+      )
+    )
+    (INSTANCE dec1
+      (NET
+        (ADDI
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (ADDIEX
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (ADDIWR
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (BEQ
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (BEQEX
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (DECODE
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (EXMODE_WIDTH
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH1
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH2
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH3
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH4
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (INSTR_WIDTH
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (J
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (JEX
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LB
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LBRD
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LBWR
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LW
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (MEMADR
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (OP_WIDTH
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (RTYPE
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (RTYPEEX
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (RTYPEWR
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (SB
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (SBWR
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (SW
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (alucont\[0\]
+          (T0 395) (T1 105) (TX 0)
+          (TC 5) (IG 0)
+        )
+        (alucont\[1\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (alucont\[2\]
+          (T0 495) (T1 5) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (aluop\[0\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (aluop\[1\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (alusrca
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (alusrcb\[0\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (alusrcb\[1\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (imm\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[12\]
+          (T0 250) (T1 250) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[2\]
+          (T0 55) (T1 445) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (imm\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[5\]
+          (T0 105) (T1 395) (TX 0)
+          (TC 5) (IG 0)
+        )
+        (imm\[6\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[12\]
+          (T0 250) (T1 250) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[16\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (instr\[17\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[18\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (instr\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[22\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[26\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[27\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[2\]
+          (T0 55) (T1 445) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (instr\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[31\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[5\]
+          (T0 105) (T1 395) (TX 0)
+          (TC 5) (IG 0)
+        )
+        (instr\[6\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (nextstate\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (nextstate\[1\]
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (nextstate\[2\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (nextstate\[3\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (op\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (op\[1\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (op\[2\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (op\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (op\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (op\[5\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+      )
+      (INSTANCE ac1
+        (NET
+          (alucont\[0\]
+            (T0 395) (T1 105) (TX 0)
+            (TC 5) (IG 0)
+          )
+          (alucont\[1\]
+            (T0 400) (T1 100) (TX 0)
+            (TC 4) (IG 0)
+          )
+          (alucont\[2\]
+            (T0 495) (T1 5) (TX 0)
+            (TC 1) (IG 0)
+          )
+          (aluop\[0\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (aluop\[1\]
+            (T0 100) (T1 400) (TX 0)
+            (TC 4) (IG 0)
+          )
+          (funct\[0\]
+            (T0 400) (T1 100) (TX 0)
+            (TC 4) (IG 0)
+          )
+          (funct\[1\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (funct\[2\]
+            (T0 55) (T1 445) (TX 0)
+            (TC 3) (IG 0)
+          )
+          (funct\[3\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (funct\[4\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (funct\[5\]
+            (T0 105) (T1 395) (TX 0)
+            (TC 5) (IG 0)
+          )
+        )
+      )
+      (INSTANCE adec
+        (NET
+          (ADDI
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (ADDIEX
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (ADDIWR
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (BEQ
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (BEQEX
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (DECODE
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (EXMODE_WIDTH
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (FETCH1
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (FETCH2
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (FETCH3
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (FETCH4
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (INSTR_WIDTH
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (J
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (JEX
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (LB
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (LBRD
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (LBWR
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (LW
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (MEMADR
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (OP_WIDTH
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (RTYPE
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (RTYPEEX
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (RTYPEWR
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (SB
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (SBWR
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (SW
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (aluop\[0\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (aluop\[1\]
+            (T0 100) (T1 400) (TX 0)
+            (TC 4) (IG 0)
+          )
+          (nextstate\[0\]
+            (T0 400) (T1 100) (TX 0)
+            (TC 4) (IG 0)
+          )
+          (nextstate\[1\]
+            (T0 0) (T1 500) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (nextstate\[2\]
+            (T0 400) (T1 100) (TX 0)
+            (TC 4) (IG 0)
+          )
+          (nextstate\[3\]
+            (T0 100) (T1 400) (TX 0)
+            (TC 4) (IG 0)
+          )
+        )
+      )
+    )
+    (INSTANCE declk
+      (NET
+        (alucont_D\[0\]
+          (T0 395) (T1 105) (TX 0)
+          (TC 5) (IG 0)
+        )
+        (alucont_D\[1\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (alucont_D\[2\]
+          (T0 495) (T1 5) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (alucont_E\[0\]
+          (T0 350) (T1 150) (TX 0)
+          (TC 6) (IG 0)
+        )
+        (alucont_E\[1\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (alucont_E\[2\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (alusrca_D
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (alusrca_E
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (clk
+          (T0 250) (T1 250) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (imm_D\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm_D\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[12\]
+          (T0 250) (T1 250) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm_D\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[2\]
+          (T0 55) (T1 445) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (imm_D\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[5\]
+          (T0 105) (T1 395) (TX 0)
+          (TC 5) (IG 0)
+        )
+        (imm_D\[6\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm_D\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_D\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm_E\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[12\]
+          (T0 250) (T1 250) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm_E\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[2\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (imm_E\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[5\]
+          (T0 150) (T1 350) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm_E\[6\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (imm_E\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm_E\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[0\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[12\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[16\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[17\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[18\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[22\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[26\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[27\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[2\]
+          (T0 255) (T1 245) (TX 0)
+          (TC 9) (IG 0)
+        )
+        (pc_D\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[31\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[3\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (pc_D\[4\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (pc_D\[5\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (pc_D\[6\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[0\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[12\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[16\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[17\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[18\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[22\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[26\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[27\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[2\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 8) (IG 0)
+        )
+        (pc_E\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[31\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[3\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (pc_E\[4\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (pc_E\[5\]
+          (T0 455) (T1 45) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (pc_E\[6\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_E\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (rdata1_D\[0\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[10\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[11\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[12\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[13\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[14\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[15\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[16\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[17\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[18\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[19\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[1\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[20\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[21\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[22\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[23\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[24\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[25\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[26\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[27\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[28\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[29\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[2\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[30\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[31\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[3\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[4\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[5\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[6\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[7\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[8\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_D\[9\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1_E\[0\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[10\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[11\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[12\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[13\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[14\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[15\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[16\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[17\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[18\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[19\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[1\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[20\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[21\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[22\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[23\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[24\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[25\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[26\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[27\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[28\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[29\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[2\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[30\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[31\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[3\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[4\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[5\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[6\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[7\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[8\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1_E\[9\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata2_D\[0\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[10\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[11\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[12\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[13\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[14\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[15\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[16\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[17\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[18\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[19\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[1\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[20\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[21\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[22\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[23\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[24\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[25\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[26\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[27\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[28\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[29\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[2\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[30\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[31\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[3\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[4\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[5\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[6\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[7\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[8\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_D\[9\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[0\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[10\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[11\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[12\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[13\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[14\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[15\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[16\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[17\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[18\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[19\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[1\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[20\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[21\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[22\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[23\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[24\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[25\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[26\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[27\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[28\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[29\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[2\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[30\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[31\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[3\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[4\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[5\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[6\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[7\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[8\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2_E\[9\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_D\[0\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_D\[1\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_D\[2\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_E\[0\]
+          (T0 5) (T1 0) (TX 0) (TZ 495)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_E\[1\]
+          (T0 5) (T1 0) (TX 0) (TZ 495)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_E\[2\]
+          (T0 5) (T1 0) (TX 0) (TZ 495)
+          (TC 0) (IG 0)
+        )
+        (reset
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (state_D\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (state_D\[1\]
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (state_D\[2\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (state_D\[3\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (state_E\[0\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (state_E\[1\]
+          (T0 5) (T1 495) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (state_E\[2\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (state_E\[3\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+      )
+    )
+    (INSTANCE ewclk
+      (NET
+        (aluresult_E\[0\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[10\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[11\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[12\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[13\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[14\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[15\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[16\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[17\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[18\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[19\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[1\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[20\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[21\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[22\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[23\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[24\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[25\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[26\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[27\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[28\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[29\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[2\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[30\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[31\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[3\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[4\]
+          (T0 350) (T1 50) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (aluresult_E\[5\]
+          (T0 355) (T1 45) (TX 100)
+          (TC 1) (IG 2)
+        )
+        (aluresult_E\[6\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[7\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[8\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_E\[9\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[0\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[10\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[11\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[12\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[13\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[14\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[15\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[16\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[17\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[18\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[19\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[1\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[20\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[21\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[22\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[23\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[24\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[25\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[26\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[27\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[28\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[29\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[2\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[30\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[31\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[3\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[4\]
+          (T0 350) (T1 50) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (aluresult_W\[5\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[6\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[7\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[8\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult_W\[9\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (clk
+          (T0 250) (T1 250) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (mem_write_E
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (mem_write_W
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_src_E
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_src_W
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_E\[0\]
+          (T0 5) (T1 0) (TX 0) (TZ 495)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_E\[1\]
+          (T0 5) (T1 0) (TX 0) (TZ 495)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_E\[2\]
+          (T0 5) (T1 0) (TX 0) (TZ 495)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_W\[0\]
+          (T0 55) (T1 0) (TX 0) (TZ 445)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_W\[1\]
+          (T0 55) (T1 0) (TX 0) (TZ 445)
+          (TC 0) (IG 0)
+        )
+        (reg_addr_W\[2\]
+          (T0 55) (T1 0) (TX 0) (TZ 445)
+          (TC 0) (IG 0)
+        )
+        (reg_src_E
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (reg_src_W
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (reg_write_E
+          (T0 5) (T1 495) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (reg_write_W
+          (T0 55) (T1 445) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (reset
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[0\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[10\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[11\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[12\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[13\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[14\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[15\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[16\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[17\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[18\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[19\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[1\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[20\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[21\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[22\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[23\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[24\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[25\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[26\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[27\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[28\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[29\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[2\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[30\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[31\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[3\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[4\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[5\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[6\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[7\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[8\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_E\[9\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[0\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[10\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[11\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[12\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[13\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[14\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[15\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[16\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[17\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[18\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[19\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[1\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[20\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[21\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[22\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[23\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[24\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[25\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[26\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[27\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[28\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[29\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[2\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[30\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[31\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[3\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[4\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[5\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[6\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[7\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[8\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+        (write_mem_data_W\[9\]
+          (T0 55) (T1 0) (TX 445)
+          (TC 0) (IG 0)
+        )
+      )
+    )
+    (INSTANCE exec1
+      (NET
+        (alucont\[0\]
+          (T0 350) (T1 150) (TX 0)
+          (TC 6) (IG 0)
+        )
+        (alucont\[1\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (alucont\[2\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (aluresult\[0\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[10\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[11\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[12\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[13\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[14\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[15\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[16\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[17\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[18\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[19\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[1\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[20\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[21\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[22\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[23\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[24\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[25\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[26\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[27\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[28\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[29\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[2\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[30\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[31\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[3\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[4\]
+          (T0 350) (T1 50) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (aluresult\[5\]
+          (T0 355) (T1 45) (TX 100)
+          (TC 1) (IG 2)
+        )
+        (aluresult\[6\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[7\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[8\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (aluresult\[9\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (alusrca
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (alusrcb\[0\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (alusrcb\[1\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (imm\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[12\]
+          (T0 250) (T1 250) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[2\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (imm\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[5\]
+          (T0 150) (T1 350) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (imm\[6\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (imm\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (imm\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[0\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[12\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[16\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[17\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[18\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[22\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[26\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[27\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[2\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 8) (IG 0)
+        )
+        (pc\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[31\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[3\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (pc\[4\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (pc\[5\]
+          (T0 455) (T1 45) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (pc\[6\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (rdata1\[0\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[10\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[11\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[12\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[13\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[14\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[15\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[16\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[17\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[18\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[19\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[1\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[20\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[21\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[22\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[23\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[24\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[25\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[26\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[27\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[28\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[29\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[2\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[30\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[31\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[3\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[4\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[5\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[6\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[7\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[8\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata1\[9\]
+          (T0 305) (T1 0) (TX 195)
+          (TC 0) (IG 1)
+        )
+        (rdata2\[0\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[10\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[11\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[12\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[13\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[14\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[15\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[16\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[17\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[18\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[19\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[1\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[20\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[21\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[22\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[23\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[24\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[25\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[26\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[27\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[28\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[29\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[2\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[30\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[31\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[3\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[4\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[5\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[6\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[7\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[8\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[9\]
+          (T0 5) (T1 0) (TX 495)
+          (TC 0) (IG 0)
+        )
+        (srca\[0\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[10\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[11\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[12\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[13\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[14\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[15\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[16\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[17\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[18\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[19\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[1\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[20\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[21\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[22\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[23\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[24\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[25\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[26\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[27\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[28\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[29\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[2\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[30\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[31\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[3\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[4\]
+          (T0 350) (T1 50) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (srca\[5\]
+          (T0 355) (T1 45) (TX 100)
+          (TC 1) (IG 2)
+        )
+        (srca\[6\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[7\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[8\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srca\[9\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (srcb\[0\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[12\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[16\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[17\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[18\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[22\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[26\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[27\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[2\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[31\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[5\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[6\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (srcb\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+      )
+      (INSTANCE alu1
+        (NET
+          (a\[0\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[10\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[11\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[12\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[13\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[14\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[15\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[16\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[17\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[18\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[19\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[1\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[20\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[21\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[22\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[23\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[24\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[25\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[26\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[27\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[28\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[29\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[2\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[30\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[31\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[3\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[4\]
+            (T0 350) (T1 50) (TX 100)
+            (TC 2) (IG 0)
+          )
+          (a\[5\]
+            (T0 355) (T1 45) (TX 100)
+            (TC 1) (IG 2)
+          )
+          (a\[6\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[7\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[8\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (a\[9\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (alucont\[0\]
+            (T0 350) (T1 150) (TX 0)
+            (TC 6) (IG 0)
+          )
+          (alucont\[1\]
+            (T0 405) (T1 95) (TX 0)
+            (TC 3) (IG 0)
+          )
+          (alucont\[2\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[0\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[10\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[11\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[12\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[13\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[14\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[15\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[16\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[17\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[18\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[19\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[1\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[20\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[21\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[22\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[23\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[24\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[25\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[26\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[27\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[28\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[29\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[2\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[30\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[31\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[3\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[4\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[5\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[6\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[7\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[8\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b2\[9\]
+            (T0 450) (T1 50) (TX 0)
+            (TC 2) (IG 0)
+          )
+          (b\[0\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[10\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[11\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[12\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[13\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[14\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[15\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[16\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[17\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[18\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[19\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[1\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[20\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[21\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[22\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[23\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[24\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[25\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[26\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[27\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[28\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[29\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[2\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[30\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[31\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[3\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[4\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[5\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[6\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[7\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[8\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (b\[9\]
+            (T0 500) (T1 0) (TX 0)
+            (TC 0) (IG 0)
+          )
+          (result\[0\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[10\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[11\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[12\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[13\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[14\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[15\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[16\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[17\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[18\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[19\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[1\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[20\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[21\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[22\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[23\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[24\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[25\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[26\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[27\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[28\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[29\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[2\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[30\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[31\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[3\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[4\]
+            (T0 350) (T1 50) (TX 100)
+            (TC 2) (IG 0)
+          )
+          (result\[5\]
+            (T0 355) (T1 45) (TX 100)
+            (TC 1) (IG 2)
+          )
+          (result\[6\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[7\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[8\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (result\[9\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[0\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[10\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[11\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[12\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[13\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[14\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[15\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[16\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[17\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[18\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[19\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[1\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[20\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[21\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[22\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[23\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[24\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[25\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[26\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[27\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[28\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[29\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[2\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[30\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[31\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[3\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[4\]
+            (T0 350) (T1 50) (TX 100)
+            (TC 2) (IG 0)
+          )
+          (slt\[5\]
+            (T0 355) (T1 45) (TX 100)
+            (TC 1) (IG 2)
+          )
+          (slt\[6\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[7\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[8\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (slt\[9\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[0\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[10\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[11\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[12\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[13\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[14\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[15\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[16\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[17\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[18\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[19\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[1\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[20\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[21\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[22\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[23\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[24\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[25\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[26\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[27\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[28\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[29\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[2\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[30\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[31\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[3\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[4\]
+            (T0 350) (T1 50) (TX 100)
+            (TC 2) (IG 0)
+          )
+          (sum\[5\]
+            (T0 355) (T1 45) (TX 100)
+            (TC 1) (IG 2)
+          )
+          (sum\[6\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[7\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[8\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+          (sum\[9\]
+            (T0 400) (T1 0) (TX 100)
+            (TC 0) (IG 2)
+          )
+        )
+      )
+    )
+    (INSTANCE fdclk
+      (NET
+        (clk
+          (T0 250) (T1 250) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (instr_D\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[12\]
+          (T0 250) (T1 250) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[16\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (instr_D\[17\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[18\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (instr_D\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[22\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[26\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[27\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[2\]
+          (T0 55) (T1 445) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (instr_D\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[31\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[5\]
+          (T0 105) (T1 395) (TX 0)
+          (TC 5) (IG 0)
+        )
+        (instr_D\[6\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_D\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_D\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[0\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[12\]
+          (T0 295) (T1 205) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (instr_F\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[16\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (instr_F\[17\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[18\]
+          (T0 450) (T1 50) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (instr_F\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[22\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[26\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[27\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[2\]
+          (T0 50) (T1 450) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (instr_F\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[31\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[3\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[4\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[5\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[6\]
+          (T0 400) (T1 100) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (instr_F\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (instr_F\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[0\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[12\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[16\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[17\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[18\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[22\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[26\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[27\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[2\]
+          (T0 255) (T1 245) (TX 0)
+          (TC 9) (IG 0)
+        )
+        (pc_D\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[31\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[3\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 4) (IG 0)
+        )
+        (pc_D\[4\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (pc_D\[5\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (pc_D\[6\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_D\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[0\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[10\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[11\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[12\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[13\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[14\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[15\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[16\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[17\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[18\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[19\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[1\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[20\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[21\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[22\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[23\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[24\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[25\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[26\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[27\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[28\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[29\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[2\]
+          (T0 250) (T1 250) (TX 0)
+          (TC 10) (IG 0)
+        )
+        (pc_F\[30\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[31\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[3\]
+          (T0 255) (T1 245) (TX 0)
+          (TC 5) (IG 0)
+        )
+        (pc_F\[4\]
+          (T0 300) (T1 200) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (pc_F\[5\]
+          (T0 355) (T1 145) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (pc_F\[6\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[7\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[8\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_F\[9\]
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (reset
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+      )
+    )
+    (INSTANCE rf1
+      (NET
+        (REGBITS
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (clk
+          (T0 250) (T1 250) (TX 0)
+          (TC 20) (IG 0)
+        )
+        (ra1\[0\]
+          (T0 450) (T1 0) (TX 50)
+          (TC 0) (IG 1)
+        )
+        (ra1\[1\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (ra1\[2\]
+          (T0 450) (T1 0) (TX 50)
+          (TC 0) (IG 1)
+        )
+        (ra2\[0\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (ra2\[1\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (ra2\[2\]
+          (T0 0) (T1 0) (TX 0) (TZ 500)
+          (TC 0) (IG 0)
+        )
+        (rdata1\[0\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[10\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[11\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[12\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[13\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[14\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[15\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[16\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[17\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[18\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[19\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[1\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[20\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[21\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[22\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[23\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[24\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[25\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[26\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[27\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[28\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[29\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[2\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[30\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[31\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[3\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[4\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[5\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[6\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[7\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[8\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata1\[9\]
+          (T0 300) (T1 0) (TX 200)
+          (TC 0) (IG 2)
+        )
+        (rdata2\[0\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[10\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[11\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[12\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[13\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[14\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[15\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[16\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[17\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[18\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[19\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[1\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[20\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[21\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[22\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[23\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[24\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[25\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[26\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[27\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[28\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[29\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[2\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[30\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[31\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[3\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[4\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[5\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[6\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[7\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[8\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (rdata2\[9\]
+          (T0 0) (T1 0) (TX 500)
+          (TC 0) (IG 0)
+        )
+        (regwrite
+          (T0 55) (T1 445) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (wa\[0\]
+          (T0 55) (T1 0) (TX 0) (TZ 445)
+          (TC 0) (IG 0)
+        )
+        (wa\[1\]
+          (T0 55) (T1 0) (TX 0) (TZ 445)
+          (TC 0) (IG 0)
+        )
+        (wa\[2\]
+          (T0 55) (T1 0) (TX 0) (TZ 445)
+          (TC 0) (IG 0)
+        )
+        (wd\[0\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[10\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[11\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[12\]
+          (T0 50) (T1 350) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (wd\[13\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[14\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[15\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[16\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[17\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[18\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[19\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[1\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[20\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[21\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[22\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[23\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[24\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[25\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[26\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[27\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[28\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[29\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[2\]
+          (T0 50) (T1 350) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (wd\[30\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[31\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[3\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[4\]
+          (T0 350) (T1 50) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (wd\[5\]
+          (T0 50) (T1 350) (TX 100)
+          (TC 2) (IG 0)
+        )
+        (wd\[6\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[7\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[8\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+        (wd\[9\]
+          (T0 400) (T1 0) (TX 100)
+          (TC 0) (IG 2)
+        )
+      )
+    )
+    (INSTANCE stc1
+      (NET
+        (ADDI
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (ADDIEX
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (ADDIWR
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (BEQ
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (BEQEX
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (DECODE
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (EXMODE_WIDTH
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH1
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH2
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH3
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (FETCH4
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (INSTR_WIDTH
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (J
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (JEX
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LB
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LBRD
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LBWR
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (LW
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (MEMADR
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (OP_WIDTH
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (RTYPE
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (RTYPEEX
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (RTYPEWR
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (SB
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (SBWR
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (SW
+          (T0 0) (T1 500) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (mem_write
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (pc_src
+          (T0 500) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (reg_src
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (reg_write
+          (T0 5) (T1 495) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (state\[0\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (state\[1\]
+          (T0 5) (T1 495) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (state\[2\]
+          (T0 405) (T1 95) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (state\[3\]
+          (T0 100) (T1 400) (TX 0)
+          (TC 4) (IG 0)
+        )
+      )
+    )
+  )
+)
+)

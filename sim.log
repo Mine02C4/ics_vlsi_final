@@ -1,0 +1,157 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+Recompiling... reason: file './core.v' is newer than expected.
+	expected: Mon Jul 31 22:17:03 2017
+	actual:   Mon Jul 31 22:43:24 2017
+file: coretest.v
+file: addrdec.v
+file: sram.v
+file: top.v
+file: timer.v
+file: busarb.v
+file: slaves.v
+file: dmactr.v
+file: decoder.v
+file: executor.v
+file: alu.v
+file: core.v
+	module worklib.core:v
+		errors: 0, warnings: 0
+	module worklib.fetch_decode_clk:v
+		errors: 0, warnings: 0
+	module worklib.decode_execute_clk:v
+		errors: 0, warnings: 0
+	module worklib.execute_write_clk:v
+		errors: 0, warnings: 0
+file: register.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.core:v <0x62734401>
+			streams:   9, words:  1385
+		worklib.decode_execute_clk:v <0x6dcb9b08>
+			streams:   3, words:  2067
+		worklib.execute_write_clk:v <0x0d3dc1ae>
+			streams:   3, words:  1668
+		worklib.fetch_decode_clk:v <0x7bde4c67>
+			streams:   3, words:   732
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  21      20
+		Resolved nets:             0       1
+		Registers:                52      51
+		Scalar wires:             28       -
+		Expanded wires:           10       1
+		Vectored wires:           60       -
+		Always blocks:            15      14
+		Initial blocks:            2       2
+		Cont. assignments:        34      48
+		Pseudo assignments:        3       3
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         4]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         8]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[        12]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[        16]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[X] [         x]
+pc[        20]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         x]
+rdata1_D ra1[X] [         x]
+pc[        24]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 7]
+alusrca[0]
+a[        16]
+rdata1_D ra1[X] [         x]
+pc[        28]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         x]
+rdata1_D ra1[0] [         0]
+pc[        32]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[        36]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[x] [         x]
+pc[        40]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 7]
+alusrca[0]
+a[        32]
+rdata1_D ra1[0] [         0]
+Simulation complete via $finish(1) at time 72 NS + 0
+./coretest.v:34          $finish;
+ncsim> exit
