@@ -33,7 +33,8 @@ module state_to_control
     input [3:0] state,
     output mem_write,
     output reg_write,
-    output reg_src
+    output reg_src,
+    output pc_src
   );
   `include "parameter.h"
   assign mem_write = (state == SBWR) ? 1 : 0;
@@ -43,5 +44,9 @@ module state_to_control
       (state == ADDIEX)
       ) ? 1 : 0;
   assign reg_src = (state == LBRD) ? 1 : 0;
+  assign pc_src = (
+      (state == BEQEX) |
+      (state == JEX)
+      ) ? 1 : 0;
 endmodule
 

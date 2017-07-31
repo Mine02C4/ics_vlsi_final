@@ -16,10 +16,15 @@ module decoder
   assign op = instr[31:26];
   assign nextstate = nextstate_mux(op);
   assign imm = instr[15:0];
+  assign alusrca = (
+      (op == RTYPE) |
+      (op == BEQ) |
+      (op == ADDI)
+      ) ? 1 : 0;
   alu_decoder adec (nextstate, aluop);
   alucontrol ac1(aluop, instr[5:0], alucont);
 
-  function [EXMODE_WIDTH - 1:0] nextstate_mux;
+  function [3:0] nextstate_mux;
     input [5:0] op;
     case(op)
       LB:      nextstate_mux = LBRD;
@@ -32,7 +37,7 @@ module decoder
       BEQ:     nextstate_mux = BEQEX;
       ADDI:    nextstate_mux = ADDIEX;
       J:       nextstate_mux = JEX;
-      default: nextstate_mux = FETCH1; // should never happen
+      default: nextstate_mux = 4'b0011; // should never happen
     endcase
   endfunction
 endmodule

@@ -20,7 +20,7 @@ module alu
     input [31:0] a, b; 
     input [1:0] alucont;
     input [31:0] sum, slt;
-    case (alucont)
+    case (alucont[1:0])
       2'b00: alumux = a & b;
       2'b01: alumux = a | b;
       2'b10: alumux = sum;

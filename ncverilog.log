@@ -1,0 +1,165 @@
+ncverilog: 06.20-s004: (c) Copyright 1995-2008 Cadence Design Systems, Inc.
+TOOL:	ncverilog	06.20-s004: Started on Jul 31, 2017 at 22:22:23 JST
+ncverilog
+	+access+r
+	coretest.v
+	addrdec.v
+	sram.v
+	top.v
+	timer.v
+	busarb.v
+	slaves.v
+	dmactr.v
+	decoder.v
+	executor.v
+	alu.v
+	core.v
+	register.v
+file: coretest.v
+file: addrdec.v
+file: sram.v
+file: top.v
+file: timer.v
+file: busarb.v
+file: slaves.v
+file: dmactr.v
+file: decoder.v
+file: executor.v
+file: alu.v
+file: core.v
+file: register.v
+	module worklib.regfile:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+      aluresult_E, reg_addr_E, mem_write_E, reg_write_E, reg_src_E, pc_src_E, write_mem_data_E,
+                                                                                             |
+ncelab: *W,CUVMPW (./core.v,62|93): port sizes differ in port connection.
+      aluresult_W, reg_addr_W, mem_write_W, reg_write_W, reg_src_W, pc_src_W, write_mem_data_W
+                                                                                             |
+ncelab: *W,CUVMPW (./core.v,63|93): port sizes differ in port connection.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.regfile:v <0x4386964c>
+			streams:   4, words:  1335
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  21      20
+		Resolved nets:             0       1
+		Registers:                52      51
+		Scalar wires:             29       -
+		Expanded wires:           42       2
+		Vectored wires:           58       -
+		Always blocks:            15      14
+		Initial blocks:            2       2
+		Cont. assignments:        34      48
+		Pseudo assignments:        3       3
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+ncsim> source /usr/local/vdec/cadence/IUS06.20.004/tools/inca/files/ncsimrc
+ncsim> run
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         0]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 0]
+alusrca[0]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         4]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[         8]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[        12]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[        16]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[X] [         x]
+pc[        20]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         x]
+rdata1_D ra1[X] [         x]
+pc[        24]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 7]
+alusrca[0]
+a[        16]
+rdata1_D ra1[X] [         x]
+pc[        28]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         x]
+rdata1_D ra1[0] [         0]
+pc[        32]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[0] [         0]
+pc[        36]
+pc_src_W[0]
+pc_src_E[0]
+state_E[10]
+alusrca[1]
+a[         0]
+rdata1_D ra1[x] [         x]
+pc[        40]
+pc_src_W[0]
+pc_src_E[0]
+state_E[ 7]
+alusrca[0]
+a[        32]
+rdata1_D ra1[0] [         0]
+Simulation complete via $finish(1) at time 72 NS + 0
+./coretest.v:34          $finish;
+ncsim> exit
+TOOL:	ncverilog	06.20-s004: Exiting on Jul 31, 2017 at 22:22:24 JST  (total: 00:00:01)
