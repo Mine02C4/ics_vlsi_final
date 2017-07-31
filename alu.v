@@ -7,7 +7,7 @@ module alu
     output [31:0] result
   );
 
-  wire     [31:0] b2, sum, slt;
+  wire [31:0] b2, sum, slt;
 
   assign b2 = alucont[2] ? ~b:b; 
   assign sum = a + b2 + alucont[2];
